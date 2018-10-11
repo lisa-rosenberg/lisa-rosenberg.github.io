@@ -64,7 +64,6 @@
     }
   }
 
-
   @include media-query($on-palm) {
     position: relative;
     background-color: $background-color;
@@ -105,7 +104,6 @@
 
 }
 
-
 /**
  * Sidebar
  */
@@ -125,7 +123,6 @@
 
 }
 
-
 /**
  * Site footer
  */
@@ -139,8 +136,6 @@
   padding: $spacing-unit 0;
   font-size: 14px;
 }
-
-
 
 /**
  * Page content
@@ -163,8 +158,6 @@
   display: block;
   font-size: 38px;//42px;
 }
-
-
 
 /**
  * Posts
@@ -189,8 +182,6 @@
   }
 }
 
-
-
 #markdown-toc{
   float: right;
   width:50%;
@@ -211,7 +202,6 @@
   display:block;
   font-size:18px
 }
-
 
 .post-content {
   p { padding:$spacing-unit/5 0; } 
@@ -252,7 +242,6 @@
   }
 }
 
-
 /**
  * Pagination Style
  */
@@ -266,7 +255,6 @@
   li.next a{float:right;}
   li.disabled {display:none;}
 }
-
 
 /**
  * Tags and Categories Style
@@ -283,15 +271,12 @@
   }
 }
 
-
 /*time style of tages and categories*/
 
 time{
   margin-left: 15px;
   font-style: italic;
 }
-
-
 
 /**
  * Aboutme photo Style
@@ -307,7 +292,6 @@ time{
   }
 }
 
-
 .img-about{
   height: 128px;
   width: 128px;
@@ -315,8 +299,6 @@ time{
   margin: 0 auto;
   display: block;
 }
-
-
 
 /**
  * New style for quotation.
@@ -332,5 +314,3 @@ q:after {
   color: #DD1144;
   font-weight:bold;
 }
-
-
