@@ -1,17 +1,57 @@
-# Site settings (accessed in templates via {{ site.myvariable }}, ...)
-title: read write learn
-email: lisa.rosenberg@outlook.de
-description: >-
+# Site Information
+title                   : read write learn
+tagline                 :
+author                  : Lisa Rosenberg
+email                   : lisa.rosenberg@outlook.de
+description             : >-
   This is my blog about software development related topics.
   I want to write down my experiences and things I have learned - so why not sharing them online?
   There will be posts about a single topic as well as (hopefully) monthly posts containing things I have learned that month.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: rosenbeli
-github_username: lisa-rosenberg
+keywords                : "Software, Development, Lessons Learned, Jekyll, Blog"
+baseurl                 : "" # the subpath of the site, e.g. /blog
+url                     : "" # the base hostname & protocol for the site, e.g. http://example.com
+locale                  : en_US
 
-# Build settings
-markdown: kramdown
-theme: minima
-plugins:
-  - jekyll-feed
+# Author Information
+twitter_username        : rosenbeli
+github_username         : lisa-rosenberg
+disqus_shortname        :
+favicon                 : "assets/images/favicon.ico"
+aboutme                 : Hi, this is Lisa Rosenberg.
+aboutme_photo           : "/assets/images/profile.jpg"
+google_analytics_key    :
+
+# Site Settings
+ShowContactInfo         : "true"
+default_column          : "two"
+default_locale          : "en"
+
+locales:
+  en:
+    Aboutme             : "About Me"
+    Archives            : "Archives"
+    Blogroll            : "Blogroll"
+    Categories          : "Categories"
+    Copyright_Notice    : "Copyright Notice"
+    Recent_Posts        : "Recent Posts"
+    Tags                : "Tags"
+    Previous            : "Older"
+    Next                : "Newer"
+    PostedInCategories  : "Posted in"
+    Taggedwith          : "and tagged"
+    PostDate            : "on "
+    Google_search       : "Site Search"
+    Home                : "Home"
+    About               : "About"
+    Guestbook           : "Guestbook"
+    Subscribe           : "Subscribe"
+
+# Build Settings
+markdown                : kramdown
+highlighter             : #pygments
+kramdown:
+  input                 : GFM
+  syntax_highlighter    : rouge
+plugins                 : [jekyll-paginate]
+paginate                : 5
+excerpt_separator       : <!-- more -->
