@@ -3,9 +3,7 @@
 ---
 @charset "utf-8";
 
-
-
-// Our variables
+// Variables
 $base-font-family: 'Lato', 'Open Sans', Helvetica, Arial, sans-serif !important;
 $base-font-size:   16px;
 $small-font-size:  $base-font-size * 0.875;
@@ -26,15 +24,12 @@ $grey-color-dark:  darken($grey-color, 25%);
 $code-backgroud-color: #29281e;
 $code-font-color:  #eee;  
 
-
 // Width of the content area
 $content-width:    960px;
 $page-width:       1000px;
 
 $on-palm:          600px;
 $on-laptop:        800px;
-
-
 
 // Using media queries with like this:
 // @include media-query($on-palm) {
@@ -48,8 +43,6 @@ $on-laptop:        800px;
         @content;
     }
 }
-
-
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
