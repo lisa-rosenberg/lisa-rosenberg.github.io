@@ -4,11 +4,13 @@
 
 //Positioning context for the mobile navigation icon
 .page-header-title {
+  height: 300px;
   background: $page-header-image center;
   background-size: 100%;
-  height: 300px;
   display: flex;
   margin-bottom: 15px;
+  margin-left: -15px;
+  margin-right: -15px;
 }
 
 .site-header {
@@ -21,9 +23,10 @@
   letter-spacing: -1px;
   align-self: flex-end;
   margin-bottom: 0;
-  padding-left: 15px;
+  padding-left: 30px;
   padding-bottom: 5px;
   text-align: left;
+
   a {
     &, &:visited, &:hover {
       color: $link-title-color;
@@ -198,7 +201,7 @@
 
 .post-link {
   display: block;
-  font-size: 38px; //42px;
+  font-size: 25px;
 }
 
 // Posts
@@ -212,7 +215,7 @@
 }
 
 .post-title {
-  font-size: 38px; //42px;
+  font-size: 25px;
   letter-spacing: -1px;
   line-height: 1;
 

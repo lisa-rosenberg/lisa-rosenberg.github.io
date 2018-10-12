@@ -52,3 +52,13 @@ kramdown:
 plugins                 : [jekyll-paginate]
 paginate                : 5
 excerpt_separator       : <!-- more -->
+
+
+exclude:
+  - .idea
+  - .gitignore
+  - .travis.yml
+  - lisa-rosenberg.github.io.iml
+  - README.md
+  - Gemfile
+  - Gemfile.lock
