@@ -17,7 +17,7 @@ layout: default
                     <a itemprop="url" class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title
                         }}</a>
                 </h1>
-                <p>{{ post.content | strip_html | truncate: 425 }}
+                <p>{{ post.content | strip_html | truncate: 400 }}
                     <a href="{{ post.url | prepend: site.baseurl }}" title="Permalink to: {{ post.title }}"
                        class="read-more">Read more</a>
                 </p>
