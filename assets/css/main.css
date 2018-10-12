@@ -209,14 +209,13 @@ table tr th :last-child, table tr td :last-child {
   .site-nav .menu-icon {
     display: none; }
   .site-nav .page-link {
-    color: #828282;
     line-height: 1.6em;
     margin-left: 10px;
     margin-right: 10px; }
   .site-nav a {
     text-decoration: none; }
     .site-nav a:hover {
-      color: #111;
+      color: #FE9850;
       text-decoration: none; }
   @media screen and (max-width: 600px) {
     .site-nav {
