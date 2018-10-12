@@ -11,6 +11,7 @@ keywords                : "Software, Development, Lessons Learned, Jekyll, Blog"
 baseurl                 : "" # the subpath of the site, e.g. /blog
 url                     : "" # the base hostname & protocol for the site, e.g. http://example.com
 locale                  : en_US
+header_photo            :
 
 # Author Information
 twitter_username        : rosenbeli
