@@ -1,0 +1,31 @@
+<div class="sidebar-module about">
+    <img title="{{site.author}}" src="{{site.aboutme_photo}}" alt="{{site.author}}"/>
+    <h3>{{site.author}}</h3>
+    <span >{{site.description}}</span>
+
+    <br/>
+
+    {% if site.ShowContactInfo == "true" %}
+    <p> You can contact me via: <p/>
+
+    {% if site.email != empty %}
+    <a href="mailto:{{site.email}}" title="mailto: {{site.email}}">
+        <i class="fa fa-envelope-square fa-3x"></i>
+    </a>
+    {% endif %}
+
+    {% if site.github_username != empty %}
+    <a href="https://github.com/{{site.github_username}}" title="GithubID: {{site.github_username}}">
+        <i class="fa fa-github-square fa-3x"></i>
+    </a>
+    {% endif %}
+
+    {% if site.twitter_username != empty %}
+    <a href="https://twitter.com/{{site.twitter_username}}" title="TwitterID: {{site.twitter_username}}">
+        <i class="fa fa-twitter-square fa-3x"></i>
+    </a>
+    {% endif %}
+
+    {% endif %}
+
+</div>

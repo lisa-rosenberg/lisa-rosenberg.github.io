@@ -1,0 +1,33 @@
+---
+layout: default
+---
+
+<div class="home">
+    <div class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+        {% for post in paginator.posts %}
+
+        <article class="post-header post-preview">
+            <div class="post-preview-left">
+                <a href='{{post.url}}'><img class='post-image' src="{{post.image}}"/></a>
+            </div>
+
+            <div class="post-preview-right">
+                <h1 itemprop="name" class="post-title">
+                    <a itemprop="url" class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title
+                        }}</a>
+                </h1>
+                <p>{{ post.content | strip_html | truncate: 425 }}
+                    <a href="{{ post.url | prepend: site.baseurl }}" title="Permalink to: {{ post.title }}"
+                       class="read-more">Read more</a>
+                </p>
+                <time class="post-meta" datetime="{{ post.date | date: '%Y-%m-%d' }}">
+                    {{ post.date | date: "%B %-d, %Y" }}
+                </time>
+            </div>
+        </article>
+
+        {% endfor %}
+
+    </div>
+</div>
