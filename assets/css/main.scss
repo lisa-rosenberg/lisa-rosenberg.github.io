@@ -2,35 +2,53 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 
-// Variables
-$base-font-family: 'Lato', 'Open Sans', Helvetica, Arial, sans-serif !important;
-$base-font-size:   16px;
-$small-font-size:  $base-font-size * 0.875;
-$base-line-height: 1.6em;
+//#############################################################################
+//## Variables
+//#############################################################################
 
-$spacing-unit:     15px;
+// Text
+$text-font-family:          'Lato', 'Open Sans', Helvetica, Arial, sans-serif !important;
+$text-font-size:            16px;
+$text-font-weight:          300;
+$text-line-height:          1.6em;
+$text-font-size-small:      $text-font-size * 0.875;
+$text-spacing-unit:         15px;
+$text-color:                #111;
+$text-quotation-color:      #DD1144;
 
-$text-color:       #111;
-$background-color: #f9f9f9;
-$brand-color:      #2a7ae2;
-$brand-top-color:  #2583ad;
-$hover-color:      #DD1144;
+// Links
+$link-hover-color:          #669900;
+$link-post-color:           #d6d6d6;
+$link-page-color:           #d6d6d6;
+$link-top-color-dark:       darken($link-page-color, 25%);
 
-$background-image: url(/assets/images/page/bg_knitting.png);
+// Page
+$page-color:                #ffffff;
+$page-shadow-color:         #bbbbbb;
+$page-background-image:     url(/assets/images/page/bg_knitting.png);
+$page-background-color:     #f9f9f9;
 
-$grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
+// Horizontal Lines
+$line-color:                #828282;
+$line-color-light:          lighten($line-color, 40%);
+$line-color-dark:           darken($line-color, 25%);
 
-$code-backgroud-color: #29281e;
-$code-font-color:  #eee;  
+// Code
+$code-backgroud-color:      #29281e;
+$code-font-color:           #eeeeee;
+
+// Footer
+$footer-background-color:   #ffffff;
+
+// Table
+$table-color:               #f8f8f8;
+$table-border-color:        #d6d6d6;
 
 // Width of the content area
-$content-width:    960px;
-$page-width:       1000px;
-
-$on-palm:          600px;
-$on-laptop:        800px;
+$content-width:             960px;
+$page-width:                1000px;
+$on-palm:                   600px;
+$on-laptop:                 800px;
 
 // Media queries:
 @mixin media-query($device) {

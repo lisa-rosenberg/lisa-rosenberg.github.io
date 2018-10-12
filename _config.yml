@@ -29,23 +29,16 @@ default_locale          : "en"
 
 locales:
   en:
-    Aboutme             : "About Me"
-    Archives            : "Archives"
-    Blogroll            : "Blogroll"
+    Home                : "Home"
     Categories          : "Categories"
-    Copyright_Notice    : "Copyright Notice"
     Recent_Posts        : "Recent Posts"
     Tags                : "Tags"
+    Archives            : "Archives"
+
     Previous            : "Older"
     Next                : "Newer"
-    PostedInCategories  : "Posted in"
-    Taggedwith          : "and tagged"
-    PostDate            : "on "
-    Google_search       : "Site Search"
-    Home                : "Home"
-    About               : "About"
-    Guestbook           : "Guestbook"
-    Subscribe           : "Subscribe"
+
+    PostedInCategories  : "in category"
 
 # Build Settings
 markdown                : kramdown

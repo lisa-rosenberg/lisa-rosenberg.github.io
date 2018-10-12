@@ -17,7 +17,7 @@
     &,
     &:visited,
     &:hover {
-      color: $brand-top-color; //$grey-color-dark
+      color: $link-page-color; //$grey-color-dark
       border-bottom: 1px dotted;
       text-decoration: none;
     }
@@ -30,22 +30,22 @@
   letter-spacing: -1px;
   margin-bottom: 0;
   text-align: center;
-  color: $grey-color;
+  color: $line-color;
 }
 
 .site-nav {
   /*float: right;*/
   line-height: 56px;
-  border-top: 1px solid $grey-color-light;
-  border-bottom: 1px solid $grey-color-light;
+  border-top: 1px solid $line-color-light;
+  border-bottom: 1px solid $line-color-light;
 
   .menu-icon {
     display: none;
   }
 
   .page-link {
-    color: $grey-color;
-    line-height: $base-line-height;
+    color: $line-color;
+    line-height: $text-line-height;
 
     // Gaps between nav items, but not on the first one
     margin-left: 10px;
@@ -64,8 +64,8 @@
 
   @include media-query($on-palm) {
     position: relative;
-    background-color: $background-color;
-    border: 1px solid $grey-color-light;
+    background-color: $page-background-color;
+    border: 1px solid $line-color-light;
     border-radius: 5px;
     text-align: center;
 
@@ -79,7 +79,7 @@
         height: 30px;
 
         path {
-          fill: $grey-color-dark;
+          fill: $line-color-dark;
         }
       }
     }
@@ -111,9 +111,9 @@
   font-size: 14px;
 
   h4 {
-    font-size: $base-font-size;
+    font-size: $text-font-size;
     font-weight: bold;
-    color: $grey-color-dark;
+    color: $line-color-dark;
   }
 
   li {
@@ -146,10 +146,10 @@
 .site-footer {
   clear: both;
   text-align: center;
-  background-color: #f9f9f9;
-  border-top: 1px solid $grey-color-light;
-  margin: $spacing-unit 0;
-  padding: $spacing-unit 0;
+  background-color: $footer-background-color;
+  border-top: 1px solid $line-color-light;
+  margin: $text-spacing-unit 0;
+  padding: $text-spacing-unit 0;
   font-size: 14px;
 }
 
@@ -158,7 +158,7 @@
 //#############################################################################
 
 .page-content {
-  padding: $spacing-unit 0;
+  padding: $text-spacing-unit 0;
 
   strong {
     font-weight: bold;
@@ -170,8 +170,8 @@
 }
 
 .post-meta {
-  font-size: $small-font-size;
-  color: $grey-color;
+  font-size: $text-font-size-small;
+  color: $line-color;
 }
 
 .post-link {
@@ -181,7 +181,7 @@
 
 // Posts
 .post-header {
-  margin-bottom: $spacing-unit;
+  margin-bottom: $text-spacing-unit;
 
   time {
     margin-left: 0px;
@@ -216,14 +216,14 @@
   content: "Table of Contents";
   font-weight: 700;
   padding-left: 10px;
-  border-bottom: 5px solid $grey-color-light !important;
+  border-bottom: 5px solid $line-color-light !important;
   display: block;
   font-size: 18px
 }
 
 .post-content {
   p {
-    padding: $spacing-unit/5 0;
+    padding: $text-spacing-unit/5 0;
   }
 
   //  margin-bottom: $spacing-unit;
@@ -267,7 +267,7 @@
 // Quotation
 q:before {
   content: '『';
-  color: #DD1144;
+  color: $text-quotation-color;
   font-weight: bold;
 }
 

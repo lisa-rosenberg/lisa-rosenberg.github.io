@@ -7,14 +7,15 @@ layout: default
 
         {% for post in paginator.posts %}
 
-        <header class="post-header">
+        <article class="post-header">
             <h1 itemprop="name" class="post-title">
                 <a itemprop="url" class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
             </h1>
+            <p>{{ post.content | strip_html | truncatewords: 56 }} <a href="{{ post.url | prepend: site.baseurl }}" title="Permalink to: {{ post.title }}" class="read-more">Read more</a></p>
             <time class="post-meta" itemprop="datePublished" datetime="{{ post.date | date: '%Y-%m-%d' }}">
-                {{ site.locales[site.default_locale].PostDate }}{{ post.date | date: "%b %-d, %Y" }}
+                {{ site.locales[site.default_locale].PostDate }}{{ post.date | date: "%B %-d, %Y" }}
             </time>
-        </header>
+        </article>
 
         <hr/>
 
