@@ -21,14 +21,14 @@ $text-markdown-toc-background-color: #d0dfda;
 
 // Links
 $link-hover-color:          #669900;
-$link-post-color:           #d6d6d6;
-$link-page-color:           #d6d6d6;
-$link-top-color-dark:       darken($link-page-color, 25%);
+$link-post-color:           #8c8c8c;
+$link-page-color:           #8c8c8c;
+$link-page-color-dark:      darken($link-page-color, 25%);
 
 // Page
 $page-color:                #ffffff;
 $page-shadow-color:         #bbbbbb;
-$page-background-image:     url(/assets/images/page/bg_knitting.png);
+$page-background-image:     url(/assets/images/page/bg_what-the-hex.png);
 $page-background-color:     #f9f9f9;
 $page-footer-color:         #ffffff;
 

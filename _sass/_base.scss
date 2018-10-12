@@ -124,7 +124,7 @@ a {
   text-decoration: none;
 
   &:visited {
-    color: $link-top-color-dark;
+    color: $link-page-color-dark;
   }
 
   &:hover {
@@ -139,7 +139,7 @@ a {
   border-bottom: 1px dotted;
 
   &:visited {
-    color: $link-top-color-dark;
+    color: $link-page-color-dark;
   }
 
   &:hover {
@@ -159,7 +159,7 @@ blockquote {
   background: $text-quotation-background-color;
 
   &:hover {
-    color: #454545;
+    color: $link-hover-color;
   }
 
   > :last-child {
