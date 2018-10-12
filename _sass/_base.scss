@@ -37,7 +37,7 @@ h1, h2, h3, h4, p, blockquote, pre, ul, ol, dl, figure, %vertical-rhythm {
   margin-left: auto;
   padding-right: $text-spacing-unit;
   padding-left: $text-spacing-unit;
-  padding-top: 30px;
+  padding-top: 15px;
 
   background-color: $page-color;
   margin-top: 0;
@@ -120,12 +120,8 @@ h1, h2, h3, h4, h5, h6 {
 
 // Links
 a {
-  color: $link-page-color;
+  color: $link-page-color-dark;
   text-decoration: none;
-
-  &:visited {
-    color: $link-page-color-dark;
-  }
 
   &:hover {
     color: $link-hover-color;
