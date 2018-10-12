@@ -70,7 +70,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 300; }
 
 a {
-  color: #afafaf;
+  color: #828282;
   text-decoration: none; }
   a:hover {
     color: #FE9850;
@@ -81,7 +81,7 @@ a {
   text-decoration: none;
   border-bottom: 1px dotted; }
   .post-content a:visited {
-    color: #6f6f6f; }
+    color: #424242; }
   .post-content a:hover {
     color: #FE9850;
     text-decoration: none; }
