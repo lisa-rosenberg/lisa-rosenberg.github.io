@@ -7,7 +7,12 @@ layout: default
 
         {% for post in paginator.posts %}
 
-        <article class="post-header">
+        <article class="post-header divs">
+            <div class="post-left">
+                <a href='{{post.url}}'><img class='post-image-thumb' src="{{post.image}}"/></a>
+            </div>
+
+            <div class="post-right">
             <h1 itemprop="name" class="post-title">
                 <a itemprop="url" class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
             </h1>
@@ -15,9 +20,9 @@ layout: default
             <time class="post-meta" datetime="{{ post.date | date: '%Y-%m-%d' }}">
                 {{ post.date | date: "%B %-d, %Y" }}
             </time>
-        </article>
+            </div>
 
-        <hr/>
+        </article>
 
         {% endfor %}
 

@@ -1,8 +1,9 @@
 ---
-layout: post
-title:  "Lorem Ipsum"
-date:   2018-10-11 20:00:00 +0200
-categories: test
+layout:     post
+title:      "Lorem Ipsum"
+date:       2018-10-11 20:00:00 +0200
+image:      "/assets/images/page/profile.jpg" 
+categories: Lorem
 tags: lorem
 ---
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas varius blandit neque. Sed vulputate ipsum eros, at iaculis orci volutpat ac. Suspendisse tempus dolor sit amet metus commodo, eu sodales elit aliquet. Mauris placerat tempus elit, pulvinar cursus mi auctor non. In euismod nibh non nunc rutrum mollis. Donec interdum sollicitudin arcu, in finibus urna aliquet a. Maecenas maximus porttitor nisi, ut interdum ipsum facilisis ut. Praesent eleifend nisi ut mi porttitor, scelerisque commodo augue fringilla. Duis placerat orci tincidunt, congue arcu non, blandit dui. Aliquam pellentesque mollis aliquam. Fusce erat ipsum, sollicitudin quis justo vel, porttitor porta ex. Phasellus aliquet sodales lectus. Vivamus ullamcorper, dolor vel porttitor sollicitudin, nunc libero molestie elit, quis egestas odio metus vitae urna. Pellentesque ut placerat est, non imperdiet neque. Phasellus eget finibus enim. Vestibulum pretium erat eget pretium vehicula.
