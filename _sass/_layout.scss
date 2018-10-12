@@ -8,7 +8,6 @@
   background: $page-header-image center;
   background-size: 100%;
   display: flex;
-  margin-bottom: 15px;
   margin-left: -15px;
   margin-right: -15px;
 }
@@ -231,10 +230,10 @@
 }
 
 // Posts
-.post-header-image {
-  height: 400px;
-  margin-bottom: 15px;
-}
+//.post-header-image {
+//  height: 400px;
+//  margin-bottom: 15px;
+//}
 
 .post-header {
   margin-bottom: 20px;

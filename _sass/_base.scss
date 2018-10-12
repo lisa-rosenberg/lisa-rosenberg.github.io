@@ -178,6 +178,8 @@ pre {
 
 // Wrapper
 .wrapper {
+  margin-bottom: 5px;
+
   @extend %clearfix;
 
   @include media-query($on-laptop) {
