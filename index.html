@@ -8,11 +8,11 @@ layout: default
         {% for post in paginator.posts %}
 
         <article class="post-header post-preview">
-            <div class="post-left">
+            <div class="post-preview-left">
                 <a href='{{post.url}}'><img class='post-image' src="{{post.image}}"/></a>
             </div>
 
-            <div class="post-right">
+            <div class="post-preview-right">
                 <h1 itemprop="name" class="post-title">
                     <a itemprop="url" class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title
                         }}</a>
