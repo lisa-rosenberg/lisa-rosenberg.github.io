@@ -8,7 +8,9 @@
     {% unless post == site.posts.first %}
     {% endunless %}
     <ul>
-        <li id="{{ year }}"><a href="{{ site.baseurl }}/archives/#{{year}}">{{ year }}</a></li>
+        <li id="{{ year }}">
+            <a href="{{ site.baseurl }}/archives/#{{year}}">{{ year }}</a>
+        </li>
     </ul>
     {% endunless %}
     {% endfor %}
