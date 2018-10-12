@@ -1,7 +1,6 @@
 ---
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
-@charset "utf-8";
 
 // Variables
 $base-font-family: 'Lato', 'Open Sans', Helvetica, Arial, sans-serif !important;
@@ -31,13 +30,7 @@ $page-width:       1000px;
 $on-palm:          600px;
 $on-laptop:        800px;
 
-// Using media queries with like this:
-// @include media-query($on-palm) {
-//     .wrapper {
-//         padding-right: $spacing-unit / 2;
-//         padding-left: $spacing-unit / 2;
-//     }
-// }
+// Media queries:
 @mixin media-query($device) {
     @media screen and (max-width: $device) {
         @content;
@@ -45,12 +38,9 @@ $on-laptop:        800px;
 }
 
 // Import partials from `sass_dir` (defaults to `_sass`)
-@import
-        "base",
-        "layout",
-        "_syntax-highlighting-native" // "syntax-highlighting"
-;
+@import "base", "layout", "syntax-highlighting";
 
+// Import fonts
 @import url('http://fonts.googleapis.com/css?family=Open+Sans');
 @import url('http://fonts.googleapis.com/css?family=Lato');
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
