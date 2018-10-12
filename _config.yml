@@ -17,9 +17,9 @@ header_photo            :
 twitter_username        : rosenbeli
 github_username         : lisa-rosenberg
 disqus_shortname        :
-favicon                 : "assets/images/favicon.ico"
+favicon                 : "assets/images/page/favicon.ico"
 aboutme                 :
-aboutme_photo           : "/assets/images/profile.jpg"
+aboutme_photo           : "/assets/images/page/profile.jpg"
 google_analytics_key    :
 
 # Site Settings

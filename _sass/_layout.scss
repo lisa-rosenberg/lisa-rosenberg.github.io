@@ -2,8 +2,8 @@
 //## Site Header Settings
 //#############################################################################
 
+//Positioning context for the mobile navigation icon
 .site-header {
-  //Positioning context for the mobile navigation icon
   position: relative;
 }
 
@@ -15,7 +15,7 @@
   text-align: center;
   a {
     &,
-    &:visited
+    &:visited,
     &:hover {
       color: $brand-top-color; //$grey-color-dark
       border-bottom: 1px dotted;
