@@ -1,8 +1,9 @@
 @charset "utf-8";
 
-/**
- * Site header
- */
+//#############################################################################
+//## Site Header Settings
+//#############################################################################
+
 .site-header {
   //Positioning context for the mobile navigation icon
   position: relative;
@@ -13,8 +14,8 @@
   line-height: 56px;
   letter-spacing: -1px;
   margin-bottom: 0;
-  text-align:center;
-  a{
+  text-align: center;
+  a {
     &,
     &:visited
     &:hover {
@@ -25,12 +26,12 @@
   }
 }
 
-.site-meta{
+.site-meta {
   font-size: 20px;
-  line-height:56px;
+  line-height: 56px;
   letter-spacing: -1px;
   margin-bottom: 0;
-  text-align:center; 
+  text-align: center;
   color: $grey-color;
 }
 
@@ -39,6 +40,7 @@
   line-height: 56px;
   border-top: 1px solid $grey-color-light;
   border-bottom: 1px solid $grey-color-light;
+
   .menu-icon {
     display: none;
   }
@@ -48,13 +50,11 @@
     line-height: $base-line-height;
 
     // Gaps between nav items, but not on the first one
-
     margin-left: 10px;
     margin-right: 10px;
-
   }
 
-  a{
+  a {
     text-decoration: none;
 
     &:hover {
@@ -101,48 +101,70 @@
       padding: 5px 10px;
     }
   }
-
 }
 
-/**
- * Sidebar
- */
+//#############################################################################
+//## Sidebar Settings
+//#############################################################################
 
 .sidebar-module {
   padding: 15px;
   margin: 0 -15px 15px;
   font-size: 14px;
-  h4{
+
+  h4 {
     font-size: $base-font-size;
     font-weight: bold;
     color: $grey-color-dark;
   }
-  li{
-    list-style: none; 
-  }
 
+  li {
+    list-style: none;
+  }
 }
 
-/**
- * Site footer
- */
+// About me photo style
+.about {
+  img {
+    height: 128px;
+    width: 128px;
+    border-radius: 50%;
+    display: block;
+  }
+}
+
+.img-about {
+  height: 128px;
+  width: 128px;
+  border-radius: 50%;
+  margin: 0 auto;
+  display: block;
+}
+
+//#############################################################################
+//## Site Footer Settings
+//#############################################################################
 
 .site-footer {
   clear: both;
   text-align: center;
   background-color: #f9f9f9;
   border-top: 1px solid $grey-color-light;
-  margin: $spacing-unit 0; 
+  margin: $spacing-unit 0;
   padding: $spacing-unit 0;
   font-size: 14px;
 }
 
-/**
- * Page content
- */
+//#############################################################################
+//## Page Content Settings
+//#############################################################################
+
 .page-content {
   padding: $spacing-unit 0;
-  strong { font-weight: bold; }
+
+  strong {
+    font-weight: bold;
+  }
 }
 
 .page-heading {
@@ -156,24 +178,21 @@
 
 .post-link {
   display: block;
-  font-size: 38px;//42px;
+  font-size: 38px; //42px;
 }
 
-/**
- * Posts
- */
+// Posts
 .post-header {
   margin-bottom: $spacing-unit;
-  time{
+
+  time {
     margin-left: 0px;
     font-style: normal;
-
   }
-
 }
 
 .post-title {
-  font-size: 38px;//42px;
+  font-size: 38px; //42px;
   letter-spacing: -1px;
   line-height: 1;
 
@@ -182,41 +201,46 @@
   }
 }
 
-#markdown-toc{
+#markdown-toc {
   float: right;
-  width:50%;
-  background:#f4f7f8;
-  padding:20px 15px;
-  li{
-    padding-top:10px;
-    position:relative; 
-    list-style-type:none;  
+  width: 50%;
+  background: #f4f7f8;
+  padding: 20px 15px;
+
+  li {
+    padding-top: 10px;
+    position: relative;
+    list-style-type: none;
   }
 }
 
-#markdown-toc:before{
-  content:"Table of Contents";
+#markdown-toc:before {
+  content: "Table of Contents";
   font-weight: 700;
-  padding-left:10px;
-  border-bottom:5px solid $grey-color-light !important;
-  display:block;
-  font-size:18px
+  padding-left: 10px;
+  border-bottom: 5px solid $grey-color-light !important;
+  display: block;
+  font-size: 18px
 }
 
 .post-content {
-  p { padding:$spacing-unit/5 0; } 
+  p {
+    padding: $spacing-unit/5 0;
+  }
+
   //  margin-bottom: $spacing-unit;
-  h1 { 
+  h1 {
     font-size: 38px;
-    line-height:1em;
-    @include media-query($on-laptop){
+    line-height: 1em;
+
+    @include media-query($on-laptop) {
       font-size: 36px;
     }
-
   }
+
   h2 {
     font-size: 32px;
-    line-height:1em;
+    line-height: 1em;
 
     @include media-query($on-laptop) {
       font-size: 28px;
@@ -225,7 +249,7 @@
 
   h3 {
     font-size: 26px;
-    line-height:1em;
+    line-height: 1em;
 
     @include media-query($on-laptop) {
       font-size: 22px;
@@ -234,7 +258,7 @@
 
   h4 {
     font-size: 20px;
-    line-height:1em;
+    line-height: 1em;
 
     @include media-query($on-laptop) {
       font-size: 18px;
@@ -242,74 +266,69 @@
   }
 }
 
-/**
- * Pagination Style
- */
-
-.pager{
-  margin-bottom: 60px;
-  text-align: center;
-  ul { display: block; margin: 20px 0; }
-  li{list-style: none;}
-  li.previous a{float:left;}
-  li.next a{float:right;}
-  li.disabled {display:none;}
-}
-
-/**
- * Tags and Categories Style
- */
-
-.tags-box{
-  li {
-    list-style: none;
-    font-weight: bold;
-    margin-top:10px;
-  }
-  .size{
-    font-size: 0.7em; font-weight: bold; vertical-align: super;
-  }
-}
-
-/*time style of tages and categories*/
-
-time{
-  margin-left: 15px;
-  font-style: italic;
-}
-
-/**
- * Aboutme photo Style
- */
-
-.about{
-  img {
-    height: 128px;
-    width: 128px;
-    border-radius:50%;
-    display: block;
-  }
-}
-
-.img-about{
-  height: 128px;
-  width: 128px;
-  border-radius:50%;
-  margin: 0 auto;
-  display: block;
-}
-
-/**
- * New style for quotation.
- */
-
+// Quotation
 q:before {
   content: '『';
   color: #DD1144;
-  font-weight:bold;
+  font-weight: bold;
 }
+
 q:after {
-  content:'』';
+  content: '』';
   color: #DD1144;
-  font-weight:bold;
+  font-weight: bold;
+}
+
+//#############################################################################
+//## Pagination Style Settings
+//#############################################################################
+
+.pager {
+  margin-bottom: 60px;
+  text-align: center;
+
+  ul {
+    display: block;
+    margin: 20px 0;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  li.previous a {
+    float: left;
+  }
+
+  li.next a {
+    float: right;
+  }
+
+  li.disabled {
+    display: none;
+  }
+}
+
+//#############################################################################
+//## Tags and Categories Style Settings
+//#############################################################################
+
+.tags-box {
+  li {
+    list-style: none;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+
+  .size {
+    font-size: 0.7em;
+    font-weight: bold;
+    vertical-align: super;
+  }
+}
+
+// time style of tags and categories
+time {
+  margin-left: 15px;
+  font-style: italic;
 }

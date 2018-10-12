@@ -1,16 +1,8 @@
-/**
- * Reset some basic elements
- */
-body, h1, h2, h3, h4,
-p, blockquote, pre, hr,
-dl, dd, ol, ul, figure {
-  margin: 0;
-  padding: 0;
-}
+//#############################################################################
+//## Basic Styling
+//#############################################################################
 
-/**
- * Basic styling
- */
+// Basic page styling
 body {
   font-family: $base-font-family;
   font-size: $base-font-size;
@@ -21,71 +13,87 @@ body {
   -webkit-text-size-adjust: 100%;
 }
 
-/**
- * Set `margin-bottom` to maintain vertical rhythm
- */
-h1, h2, h3, h4, 
-p, blockquote, pre,
-ul, ol, dl, figure,
-%vertical-rhythm {
+// Reset some basic elements
+body, h1, h2, h3, h4, p, blockquote, pre, hr, dl, dd, ol, ul, figure {
+  margin: 0;
+  padding: 0;
+}
+
+// Set `margin-bottom` to maintain vertical rhythm
+h1, h2, h3, h4, p, blockquote, pre, ul, ol, dl, figure, %vertical-rhythm {
   margin-bottom: $spacing-unit / 2;
 }
 
-/**
- * Set main page style
- */
+//#############################################################################
+//## Main Page Styling
+//#############################################################################
 
+// Set main page style
 .container {
-  min-height:100%;
+  min-height: 100%;
   max-width: -webkit-calc(#{$page-width} - (#{$spacing-unit} * 2));
-  max-width:         calc(#{$page-width} - (#{$spacing-unit} * 2));
+  max-width: calc(#{$page-width} - (#{$spacing-unit} * 2));
   margin-right: auto;
   margin-left: auto;
   padding-right: $spacing-unit;
   padding-left: $spacing-unit;
-  padding-top:30px;
+  padding-top: 30px;
 
-  background-color:#fff;
-  margin-top:20px;
-  margin-bottom:30px;
+  background-color: #fff;
+  margin-top: 20px;
+  margin-bottom: 30px;
   box-shadow: 1px 1px 10px #BBB;
 }
 
-/*for media*/
+// Set main page style for media
 *, *:before, *:after {
-  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-/*two columns*/
-.col-sm-8,.col-sm-2{
-  position:relative;
-  min-height:1px;
+// Set main page style two columns layout
+.col-sm-8, .col-sm-2 {
+  position: relative;
+  min-height: 1px;
   margin: 0px 15px;
 }
 
-@media screen and (min-width : $on-palm) {
+@media screen and (min-width: $on-palm) {
   .col-sm-8 {
-    float:left;
-    width:65%;
+    float: left;
+    width: 65%;
   }
 
   .col-sm-2 {
-    float:right;
-    width:25%;
+    float: right;
+    width: 25%;
   }
 }
 
-/**
- * Images
- */
+// line between each post on main page
+hr {
+  margin-bottom: 30px;
+  border: 0;
+  border-bottom: 1px dotted #ccc;
+}
+
+cite {
+  font-style: italic;
+  text-decoration: underline;
+}
+
+//#############################################################################
+//## Element Styling
+//#############################################################################
+
+// Images
 img {
   max-width: 100%;
   vertical-align: middle;
 }
 
-/**
- * Figures
- */
+// Figures
 figure > img {
   display: block;
 }
@@ -94,30 +102,23 @@ figcaption {
   font-size: $small-font-size;
 }
 
-/**
- * Lists
- */
+// Lists
 ul, ol {
   margin-left: $spacing-unit;
 }
 
 li {
-  > ul,
-  > ol {
+  > ul, > ol {
     margin-bottom: 0;
   }
 }
 
-/**
- * Headings
- */
+// Headings
 h1, h2, h3, h4, h5, h6 {
   font-weight: 300;
 }
 
-/**
- * Links
- */
+// Links
 a {
   color: $brand-top-color;
   text-decoration: none;
@@ -132,26 +133,23 @@ a {
   }
 }
 
-.post-content a{
-  color: $brand-color;    
-  text-decoration: none;  
+.post-content a {
+  color: $brand-color;
+  text-decoration: none;
   border-bottom: 1px dotted;
-  &:visited {             
-    color: darken($brand-color, 25%);
-  }                       
 
-  &:hover {               
+  &:visited {
+    color: darken($brand-color, 25%);
+  }
+
+  &:hover {
     color: $hover-color;
     text-decoration: none;
-  }  
-
+  }
 }
 
-/**
- * Blockquotes
- */
-
-blockquote{
+// Blockquotes
+blockquote {
   padding: 0 1em;
   margin: 14px 0;
   border: 2px dashed #d0dfda;
@@ -169,10 +167,8 @@ blockquote{
   }
 }
 
-/**
- * Code formatting
- */
-pre,code {
+// Code formatting
+pre, code {
   font-size: 15px;
   border-radius: 3px;
   background-color: $code-backgroud-color;
@@ -185,7 +181,7 @@ code {
 
 pre {
   padding: 8px 12px;
-  overflow: auto; 
+  overflow: auto;
 
   > code {
     border: 0;
@@ -194,12 +190,10 @@ pre {
   }
 }
 
-/**
- * Wrapper
- */
+// Wrapper
 .wrapper {
   max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
-  max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
+  max-width: calc(#{$content-width} - (#{$spacing-unit} * 2));
   margin-right: auto;
   margin-left: auto;
   padding-right: $spacing-unit;
@@ -208,17 +202,14 @@ pre {
 
   @include media-query($on-laptop) {
     max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
-    max-width:         calc(#{$content-width} - (#{$spacing-unit}));
+    max-width: calc(#{$content-width} - (#{$spacing-unit}));
     padding-right: $spacing-unit / 2;
     padding-left: $spacing-unit / 2;
   }
 }
 
-/**
- * Clearfix
- */
+// Clearfix
 %clearfix {
-
   &:after {
     content: "";
     display: table;
@@ -226,11 +217,8 @@ pre {
   }
 }
 
-/**
- * Icons
- */
+// Icons
 .icon {
-
   > svg {
     display: inline-block;
     width: 16px;
@@ -243,48 +231,42 @@ pre {
   }
 }
 
-/**
- * Table
- */
-
-table { 
+// Table
+table {
   padding: 0;
   margin-bottom: 5px;
-  border-collapse: collapse; 
+  border-collapse: collapse;
   font-size: $small-font-size;
 }
+
 table tr {
   border-top: 1px solid #cccccc;
   background-color: white;
   margin: 0;
   padding: 0;
 }
-table tr:nth-child(2n) { background-color: #f8f8f8; }
+
+table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
 table tr th {
   font-weight: bold;
   border: 1px solid #cccccc;
   margin: 0;
   padding: 3px 6px;
 }
+
 table tr td {
   border: 1px solid #cccccc;
   margin: 0;
   padding: 3px 6px;
 }
-table tr th :first-child, table tr td :first-child { margin-top: 0; }
-table tr th :last-child, table tr td :last-child { margin-bottom: 0; }
 
-/**
- * line between each post on main page
- */
-
-hr{
-  margin-bottom: 30px;
-  border: 0;
-  border-bottom: 1px dotted #ccc;
+table tr th :first-child, table tr td :first-child {
+  margin-top: 0;
 }
 
-cite{ 
-  font-style: italic;
-  text-decoration: underline;
+table tr th :last-child, table tr td :last-child {
+  margin-bottom: 0;
 }
