@@ -53,7 +53,6 @@
   }
 
   .page-link {
-    color: $line-color;
     line-height: $text-line-height;
 
     // Gaps between nav items, but not on the first one
@@ -65,7 +64,7 @@
     text-decoration: none;
 
     &:hover {
-      color: $text-color;
+      color: $link-hover-color;
       text-decoration: none;
     }
   }
