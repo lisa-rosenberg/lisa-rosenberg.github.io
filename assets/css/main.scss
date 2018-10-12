@@ -15,6 +15,9 @@ $text-font-size-small:      $text-font-size * 0.875;
 $text-spacing-unit:         15px;
 $text-color:                #111;
 $text-quotation-color:      #DD1144;
+$text-quotation-border-color:   #d0dfda;
+$text-quotation-background-color: #d0dfda;
+$text-markdown-toc-background-color: #d0dfda;
 
 // Links
 $link-hover-color:          #669900;
@@ -27,6 +30,7 @@ $page-color:                #ffffff;
 $page-shadow-color:         #bbbbbb;
 $page-background-image:     url(/assets/images/page/bg_knitting.png);
 $page-background-color:     #f9f9f9;
+$page-footer-color:         #ffffff;
 
 // Horizontal Lines
 $line-color:                #828282;
@@ -36,9 +40,6 @@ $line-color-dark:           darken($line-color, 25%);
 // Code
 $code-backgroud-color:      #29281e;
 $code-font-color:           #eeeeee;
-
-// Footer
-$footer-background-color:   #ffffff;
 
 // Table
 $table-color:               #f8f8f8;

@@ -17,7 +17,7 @@
     &,
     &:visited,
     &:hover {
-      color: $link-page-color; //$grey-color-dark
+      color: $link-page-color;
       border-bottom: 1px dotted;
       text-decoration: none;
     }
@@ -58,7 +58,6 @@
     &:hover {
       color: $text-color;
       text-decoration: none;
-      //font-weight: bold;
     }
   }
 
@@ -146,7 +145,7 @@
 .site-footer {
   clear: both;
   text-align: center;
-  background-color: $footer-background-color;
+  background-color: $page-footer-color;
   border-top: 1px solid $line-color-light;
   margin: $text-spacing-unit 0;
   padding: $text-spacing-unit 0;
@@ -202,7 +201,7 @@
 #markdown-toc {
   float: right;
   width: 50%;
-  background: #f4f7f8;
+  background: $text-markdown-toc-background-color;
   padding: 20px 15px;
 
   li {
@@ -273,7 +272,7 @@ q:before {
 
 q:after {
   content: '』';
-  color: #DD1144;
+  color: $text-quotation-color;
   font-weight: bold;
 }
 
