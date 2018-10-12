@@ -2,7 +2,7 @@
 layout: post
 title:  "Welcome to Jekyll!"
 date:   2018-10-10 20:14:20 +0200
-image: "/assets/images/page/header.jpg"
+image: "/assets/images/posts/jekyll-test-tubes.jpg"
 categories: Jekyll
 tags: jekyll
 ---

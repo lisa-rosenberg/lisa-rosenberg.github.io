@@ -40,7 +40,7 @@ locales:
     Next                : "Newer"
 
     PostedInCategories  : "Posted in"
-    Taggedwith          : "and tagged with"
+    Taggedwith          : "Tags: "
     PostDate            : "on "
 
 # Build Settings

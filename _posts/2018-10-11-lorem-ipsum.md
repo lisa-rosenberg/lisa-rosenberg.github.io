@@ -2,7 +2,7 @@
 layout:     post
 title:      "Lorem Ipsum"
 date:       2018-10-11 20:00:00 +0200
-image:      "/assets/images/page/profile.jpg" 
+image:      "/assets/images/posts/lorem-ipsum.jpg" 
 categories: Lorem
 tags: lorem
 ---

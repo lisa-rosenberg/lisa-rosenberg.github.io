@@ -7,17 +7,17 @@
 //#############################################################################
 
 // Text
-$text-font-family:          'Lato', 'Open Sans', Helvetica, Arial, sans-serif !important;
-$text-font-size:            16px;
-$text-font-weight:          300;
-$text-line-height:          1.6em;
-$text-font-size-small:      $text-font-size * 0.875;
-$text-spacing-unit:         15px;
-$text-color:                #111;
-$text-quotation-color:      #FE9850;
-$text-quotation-border-color:   #d0dfda;
-$text-quotation-background-color: #d0dfda;
-$text-markdown-toc-background-color: #d0dfda;
+$text-font-family:                    'Lato', 'Open Sans', Helvetica, Arial, sans-serif !important;
+$text-font-size:                      16px;
+$text-font-weight:                    300;
+$text-line-height:                    1.6em;
+$text-font-size-small:                $text-font-size * 0.875;
+$text-spacing-unit:                   15px;
+$text-color:                          #111;
+$text-quote-color:                    #FE9850;
+$text-quote-border-color:             #d0dfda;
+$text-quote-background-color:         #d0dfda;
+$text-markdown-toc-background-color:  #d0dfda;
 
 // Links
 $link-title-color:          #ffffff;
