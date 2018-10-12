@@ -53,7 +53,7 @@ plugins                 : [jekyll-paginate]
 paginate                : 5
 excerpt_separator       : <!-- more -->
 
-
+# Reading files
 exclude:
   - .idea
   - .gitignore
@@ -62,3 +62,14 @@ exclude:
   - README.md
   - Gemfile
   - Gemfile.lock
+  - vendor
+  - assets/js/plugins
+  - assets/js/_main.js
+  - assets/js/vendor
+  - .sass-cache
+  - .asset-cache
+  - .bundle
+  - .jekyll-assets-cache
+
+keep_files:
+  - .git
