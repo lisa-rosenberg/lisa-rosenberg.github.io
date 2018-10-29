@@ -18,8 +18,8 @@ Nevertheless, please let me know if you run into problems of any kind.
 ### Source Code Editor or IDE
 You may want to work with a source code editor or IDE with syntax highlighting and other helpful features.
 I am using [IntelliJ Ultimate](https://www.jetbrains.com/idea/download/#section=windows) with the Ruby plugin, but [Visual Studio Code](https://code.visualstudio.com/Download) or something similar to this will do the job, too.
-Try to choose an editor or IDE with syntax highlighting feature for Ruby, HTML, CSS, SCSS, YML and Markdown.
-Although it's not a necessity, features like this one will make it easier to work on your blog.
+Try to choose an editor or IDE with an build-in terminal and syntax highlighting feature for Ruby, HTML, CSS, SCSS, YML and Markdown.
+Although it's not a necessity, features like these will make it easier to work on your blog.
 
 ### Git and GitHub
 If you want to host your blog via GitHub as a GitHub Page or on a custom domain, you will need to have an account on GitHub and Git installed on your working machine.
@@ -45,13 +45,21 @@ Please choose the third installation option to run the full installation with MI
 
 ![Ruby Devkit installation](../assets/images/posts/2018/10-setup-jekyll-devkit.png)
 
-To check whether Ruby is properly installed, run the following command:
+To check whether Ruby is properly installed, run the following commands:
 
 ```shell
 ruby -v
 gem -v
 ridk version
 ```
+
+If you are using an IDE that offers Ruby language integration you may want to add the Ruby SDK.
+It's purely optional but will add some language related features like code completion, which always is a nice thing to have.
+In IntelliJ Ultimate you need to download the Ruby plugin and add the installed Ruby SDK in the project settings.
+You also need to replace your existing project module with a Ruby Gem module.
+Your module settings of your project should look like this:
+
+![IntelliJ module settings](../assets/images/posts/2018/10-setup-jekyll-intellij-modules.png)
 
 ### Jekyll
 Jekyll is a Ruby gem and comes along with a set of commands to easily build a static Jekyll website.
@@ -97,12 +105,103 @@ Well, but what if you are working on larger articles or make greater changes to 
 Luckily it's possible to create other branches on user repositories for these purposes.
 We will see how to even automate the whole process of releasing a new article to a productive environment.
 
+Clone the repository you just have created via HTTPS or SSH.
+
+### Creating a minimal Jekyll site
+Now that we have all tools needed and a GitHub user repository to work with it's time to create your blog.
+
+If not already done open your cloned local repository in your Source Code Editor or IDE with an build-in terminal.
+Alternatively, navigate with the Command Line tool to it.
+To create a new basic Jekyll site you have to run the following command:
+
+```shell
+jekyll new . --force
+```
+
+This command will use the current directory to create the new Jekyll site.
+The `--force` parameter is necessary, because the directory is not empty anymore as already being a git repository.
+If anything has worked you should read `New jekyll site installed in C:/path/to/repository.github.io.` as the last output.
+Yes, this is basically anything you need to set up your first minimal blog!
+The given command will set up some basic files and folders along with a minimal gem-based theme to start with.
+
+To build your newly created Jekyll site locally you only have to run the following command:
+
+```shell
+bundle exec jekyll serve
+```
+
+If anything has successfully worked you should get the following output:
+
+```shell
+Configuration file: C:/path/to/repository.github.io/_config.yml
+            Source: C:/path/to/repository.github.io
+       Destination: C:/path/to/repository.github.io/_site
+ Incremental build: disabled. Enable with --incremental
+      Generating...
+       Jekyll Feed: Generating feed for posts
+                    done in 1.924 seconds.
+ Auto-regeneration: enabled for 'C:/path/to/repository.github.io'
+    Server address: http://127.0.0.1:4000/
+  Server running... press ctrl-c to stop.
+```
+
+With this you now can access your freshly built Jekyll site with some example content by the given server address.
+Now is a good time to commit and push your progress on GitHub.
+GitHub will automatically build your Jekyll site which can be accessed online by using your GitHub GitHub Pages URL `https://<username>.github.io/`.
+Locally and remotely your blog should now look like this:
+
+![Minimal Jekyll site](../assets/images/posts/2018/10-setup-jekyll-first-page.png)
+
+### Basic structure of a Jekyll site
+Okay, we now have a basic scaffold to work with.
+Let's look on where to add actual content.
+For this we need to understand the directory and file structure of Jekyll.
+Your repository should now look like this:
+
+```shell
+.
+├── _config.yml
+├── _posts
+|   └── 2018-10-29-welcome-to-jekyll.markdown
+├── _site
+├── .sass-cache
+├── 404.html
+├── about.md
+├── Gemfile
+├── Gemfile.lock
+└── index.md
+```
+
+But for what are the files and directories used?
+* **_config.yml**: Configuration data will be stored here
+* **_posts**: This is the directory where blog posts should be stored
+    * **YYYY-MM-DD-title-of-post.markdown**: Naming convention for any blog post markdown file
+* **_site**: The built Jekyll site. Here is everything that is actually displayed in your browser
+* **.sass-cache**: Stylesheet cache
+* **404.html**: A basic error page
+* **about.md**: Information about you
+* **Gemfile**: Information about Ruby gems you want to use for your Jekyll site
+* **Gemfile.lock**: Snapshot of the current Ruby gems and their versions in use
+* **index.md**: Static content on your main page and layout information
+
+In order to get started you probably want to modify the `_config.yml` file.
+To add a new blog post just add a markdown file in the `_posts` directory according to the existing example markdown file.
+Besides the content of your article you need to add some information on your blog post in the head part of the markdown file:
+
+```
+---
+layout: post
+title:  "Welcome to Jekyll!"
+date:   2018-10-29 22:26:13 +0100
+categories: jekyll update
+---
+```
+
+That are the most important things you neeIf you aim to have a very basic blog, you can stop here.
+
 ## Hosting
     - Github Pages
     - Travis CI
 
-## Jekyll Basics
-    - Folders
-    - Files
     
 ## Everything else in jekyll doku
