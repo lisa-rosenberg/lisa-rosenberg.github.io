@@ -15,12 +15,6 @@ Everything should be pretty straightforward and clear.
 Nevertheless, please let me know if you run into problems of any kind.
 
 ## Tool Setup
-### Source Code Editor or IDE
-You may want to work with a source code editor or IDE with syntax highlighting and other helpful features.
-I am using [IntelliJ Ultimate](https://www.jetbrains.com/idea/download/#section=windows) with the Ruby plugin, but [Visual Studio Code](https://code.visualstudio.com/Download) or something similar to this will do the job, too.
-Try to choose an editor or IDE with an build-in terminal and syntax highlighting feature for Ruby, HTML, CSS, SCSS, YML and Markdown.
-Although it's not a necessity, features like these will make it easier to work on your blog.
-
 ### Git and GitHub
 If you want to host your blog via GitHub as a GitHub Page or on a custom domain, you will need to have an account on GitHub and Git installed on your working machine.
 Join GitHub by following [this link](https://github.com/).
@@ -34,6 +28,20 @@ git --version
 Some source code editors and IDE tools offer a Git integration.
 This will make it a little bit easier to work on your blog articles, because you won't need to switch the working tool to commit your changes.
 Personally I like to use one single tool which support everything I need to work properly.
+
+### TravisCI
+To make use of a fully automated build process on GitHub Pages for more advanced and individual requirements you will need TravisCI.
+TravisCI is an online application that is capable of automatically building software.
+Please refer to the [official documentation](https://docs.travis-ci.com/user/for-beginners/) for more general information about TravisCI and build processes.
+On [this](https://docs.travis-ci.com/user/tutorial) site you will find the necessary steps to link TravisCI to your GitHub account.
+Please follow the instructions to the second point.
+
+
+### Source Code Editor or IDE
+You may want to work with a source code editor or IDE with syntax highlighting and other helpful features.
+I am using [IntelliJ Ultimate](https://www.jetbrains.com/idea/download/#section=windows) with the Ruby plugin, but [Visual Studio Code](https://code.visualstudio.com/Download) or something similar to this will do the job, too.
+Try to choose an editor or IDE with a build-in terminal and syntax highlighting feature for Ruby, HTML, CSS, SCSS, YML and Markdown.
+Although it's not a necessity, features like these will make it easier to work on your blog.
 
 ### Ruby
 In order to get your blog running locally, you'll need to install the programming language Ruby with Devkit included.
@@ -156,9 +164,9 @@ Locally and remotely your blog should now look like this:
 Okay, we now have a basic scaffold to work with.
 Let's look on where to add actual content.
 For this we need to understand the directory and file structure of Jekyll.
-Your repository should now look like this:
+Your repository should currently look like this:
 
-```shell
+```text
 .
 ├── _config.yml
 ├── _posts
@@ -184,20 +192,31 @@ But for what are the files and directories used?
 * **Gemfile.lock**: Snapshot of the current Ruby gems and their versions in use
 * **index.md**: Static content on your main page and layout information
 
-In order to get started you probably want to modify the `_config.yml` file.
-To add a new blog post just add a markdown file in the `_posts` directory according to the existing example markdown file.
-Besides the content of your article you need to add some information on your blog post in the head part of the markdown file:
+Please refer to the [official documentation](https://jekyllrb.com/docs/structure/) of Jekyll for further information on this topic.
 
-```
----
+In order to get started you probably want to modify the `_config.yml` file.
+The most basic information about your blog is stored there.
+Go ahead and try to make your first changes there.
+After you are done, try to rebuild the Jekyll site to see the changes.
+
+To add a new blog post just add a markdown file in the `_posts` directory according to the existing example markdown file.
+Please refer to [this](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf) site for more information about how to style your text with markdown files.
+Besides of the content of your article you probably have noticed some kind of head part in the file.
+In this head part there are pieces of important meta information on your blog post written.
+Jekyll uses them for blog post related adjustments - e.g. what page layout to use for or which categories to associate with this particular blog post.
+Basically the meta information section only consists of some variables which are declared and/or used somewhere else in the sourcecode of this repository.
+The meta information section of the example blog post markdown file looks like this:
+
+```markdown
 layout: post
 title:  "Welcome to Jekyll!"
 date:   2018-10-29 22:26:13 +0100
 categories: jekyll update
----
 ```
 
-That are the most important things you neeIf you aim to have a very basic blog, you can stop here.
+The `_config.yml` file and `_posts` directory are the two most important things to understand and to use.
+Of course, at some point you probably will modify other files, too.
+In case you aim to get a very basic blog running, you can stop reading here.
 
 ## Hosting
     - Github Pages
