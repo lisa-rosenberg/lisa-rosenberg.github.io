@@ -199,10 +199,16 @@
   margin-left: 125px;
 }
 
-.post-image {
+// Post cover image
+.post-cover {
   height: 100%;
   width: 100%;
   object-fit: cover;
+}
+
+// Post images
+img[src$='#post-image'] {
+  border: 1px solid $image-border-color;
 }
 
 // TOC
