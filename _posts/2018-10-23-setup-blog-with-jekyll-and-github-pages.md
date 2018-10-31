@@ -1,7 +1,7 @@
 ---
 layout      : post
 title       : "Set up your own blog with Jekyll and GitHub Pages"
-date        : 2018-10-23 12:36:00
+date        : 2018-10-31 20:28:00
 cover       : "/assets/images/posts/2018/10-setup-jekyll-cover.jpg"
 categories  : Guide
 tags        : jekyll github-pages blog
