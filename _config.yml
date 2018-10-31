@@ -19,7 +19,7 @@ github_username         : lisa-rosenberg
 xing_username           : Lisa_Rosenberg3
 linkedin_username       : lisa-rosenberg-206a93142
 disqus_shortname        :
-favicon                 : "assets/images/page/favicon.ico"
+favicon                 : "/assets/images/page/favicon.ico"
 aboutme                 :
 aboutme_photo           : "/assets/images/page/profile.jpg"
 google_analytics_key    :
