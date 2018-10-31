@@ -66,11 +66,7 @@ ridk version
 
 If you are using an IDE that offers Ruby language integration you may want to add the Ruby SDK.
 It's purely optional but will add some language related features like code completion, which always is a nice thing to have.
-In IntelliJ Ultimate you need to download the Ruby plugin and add the installed Ruby SDK in the project settings.
-You also need to replace your existing project module with a Ruby Gem module.
-Your module settings of your project should look like this:
-
-![IntelliJ module settings](/assets/images/posts/2018/10-setup-jekyll-intellij-modules.png)
+You will only notive this feature in your Gemfile, though.
 
 ## Jekyll
 Jekyll is a Ruby gem and comes along with a set of commands to easily build a static Jekyll website.
