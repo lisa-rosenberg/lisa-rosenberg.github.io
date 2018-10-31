@@ -7,11 +7,12 @@
 
 // Basic Colors
 $white:         #ffffff;
-$light-gray:    #b4b4b4;
 $gray:          #828282;
-$dark-gray:     #505050;
+$light-gray:    lighten($gray, 40%);
+$dark-gray:     darken($gray, 40%);
 $black:         #1e1e1e;
 $accent:        #fe9850;
+$dark-accent:   darken($accent, 25%);
 
 // Text
 $text-font-family:                    'Lato', 'Open Sans', Helvetica, Arial, sans-serif !important;
@@ -20,17 +21,31 @@ $text-font-weight:                    300;
 $text-line-height:                    1.6em;
 $text-font-size-small:                $text-font-size * 0.875;
 $text-spacing-unit:                   15px;
+
 $text-color:                          $black;
+$text-title-color:                    $accent;
 $text-quote-color:                    $accent;
 $text-quote-border-color:             $white;
 $text-quote-background-color:         $white;
 
+// Headlines
+$headline-h1-color:         $accent;
+$headline-h2-color:         $accent;
+$headline-h3-color:         $gray;
+$headline-h4-color:         $gray;
+
+$headline-h1-style:         normal;
+$headline-h2-style:         italic;
+$headline-h3-style:         normal;
+$headline-h4-style:         normal;
+
 // Links
 $link-title-color:          $white;
+$link-text-color:           $accent;
 $link-hover-color:          $accent;
-$link-post-color:           $gray;
+$link-post-color:           $dark-gray;
 $link-page-color:           $gray;
-$link-page-color-dark:      darken($link-page-color, 25%);
+$link-page-color-dark:      $dark-gray;
 
 // Page
 $page-color:                $white;
@@ -42,8 +57,8 @@ $page-footer-color:         $white;
 
 // Horizontal Lines
 $line-color:                $dark-gray;
-$line-color-light:          lighten($line-color, 40%);
-$line-color-dark:           darken($line-color, 25%);
+$line-color-light:          $light-gray;
+$line-color-dark:           $dark-gray;
 
 // Code
 $code-backgroud-color:      $black;
@@ -51,10 +66,10 @@ $code-font-color:           $white;
 
 // Table
 $table-color:               $white;
-$table-border-color:        $dark-gray;
+$table-border-color:        $gray;
 
 // Borders
-$image-border-color:        $dark-gray;
+$image-border-color:        $gray;
 
 // Width of the content area
 $content-width:             1100px;

@@ -10,7 +10,7 @@ toc         : true
 
 # Introduction
 Setting up your own blog is a very easy task to do, especially nowadays.
-With the help of Jekyll, Ruby and GitHub Pages it really is just a matter of some couple of minutes.
+With the help of Jekyll, Ruby, GitHub Pages and TravisCI it really is just a matter of some couple of minutes.
 Plus it's totally free!
 In this article I will show you step by step how I did set up my own personal blog.
 Everything should be pretty straightforward and clear.
@@ -216,11 +216,62 @@ categories: jekyll update
 The `_config.yml` file and `_posts` directory are the two most important things to understand and to use.
 Of course, at some point you probably will modify other files, too.
 In case you aim to get a very basic blog running, you can stop reading here, because to write articles on your blog it's only necessary to add new blog post markdown files and push your changes to GitHub.
-However, if you want a more personal blog, the following chapter will
+
+## Themes
+The basic Jekyll theme is not bad, but maybe a little bit too plain.
+Personally I think it's worth the time to choose or create a blog theme you really like and suits your personal style.
+There are a lot of great predefined themes to choose from and some of them are very easy to set up.
+However, not all of them are compatible with GitHub Pages right away and therefore won't be displayed on your site.
+[Here](https://pages.github.com/themes/) is a list of all Jekyll themes supported by GitHub Pages by default.
+If you already like one of these without any further customization, see the usage instructions on the respective theme repository page and you are all set.
+
+Most of the Jekyll themes you will find [here](http://jekyllthemes.org/) won't work with GitHub Pages without using TravisCI.
+Same goes to any customization you maybe want to make on your Jekyll site.
 
 # Hosting
-    - Github Pages
-    - Travis CI
+## Using Git branches
+In order to automatically build your Jekyll site with TravisCI, it's necessary to work at least on two Git branches.
+The master branch will only be used to build your blog by GitHub Pages.
+You won't work on that branch actively anymore.
 
+A second branch - let's call it "release" - will serve as your new main branch to work on and push your commits to.
+So you have to create a new branch that branches off of the master branch.
+If you don't know how to do that, please refer to [this](https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell#_create_new_branch) site.
+From now on you don't have to push anything on the master branch.
+
+## Build your blog with TravisCI
+Now it's finally time to use TravisCI to build your blog and push the static files of the built site to your master branch automatically.
+To achieve this, firstly you have to follow the instruction steps three to four on [this](https://docs.travis-ci.com/user/tutorial) site you already have visited before.
+
+The `.travis.yml` file should look like this in order to tell TravisCI to pull only from your release branch and push the built site to your master branch.
+
+```yaml
+language: ruby
+
+cache: bundler
+
+branches:
+  only:
+  - release
+
+script:
+- JEKYLL_ENV=production bundle exec jekyll build --destination site
+
+deploy:
+  provider: pages
+  local-dir: ./site
+  github-token: $GITHUB_TOKEN
+  target-branch: master
+  skip-cleanup: true
+  keep-history: true
+  on:
+    branch: release
+```
+
+Surely you have noticed the `$GITHUB_TOKEN` variable in my `.travis.yml` file.
+It's very important for authentication purposes.
+Without it TravisCI is not allowed to pull your repository or push to it.
+Please add a new personal access token to GitHub according the instructions you'll find [here](https://docs.travis-ci.com/user/deployment/pages/) and add it as a variable to TravisCI like described [here](https://docs.travis-ci.com/user/environment-variables#defining-variables-in-repository-settings).
+The variable name you use there has to be identical to the variable name in your `.travis.yml` file.
     
 # Everything else in jekyll doku
