@@ -7,7 +7,7 @@ body {
   font-size: 16px;
   line-height: 1.6em;
   font-weight: 300;
-  color: #111;
+  color: #1e1e1e;
   background-image: url(/assets/images/page/bg_what-the-hex.png); }
 
 body, h1, h2, h3, h4, p, blockquote, pre, hr, dl, dd, ol, ul, figure {
@@ -26,7 +26,7 @@ h1, h2, h3, h4, p, blockquote, pre, ul, ol, dl, figure {
   padding-left: 15px;
   padding-top: 0;
   background-color: #ffffff;
-  box-shadow: 1px 1px 10px #bbbbbb; }
+  box-shadow: 1px 1px 10px #e8e8e8; }
 
 *, *:before, *:after {
   -moz-box-sizing: border-box;
@@ -73,37 +73,37 @@ a {
   color: #828282;
   text-decoration: none; }
   a:hover {
-    color: #FE9850;
+    color: #fe9850;
     text-decoration: underline; }
 
 .post-content a {
-  color: #8c8c8c;
+  color: #1c1c1c;
   text-decoration: none;
   border-bottom: 1px dotted; }
   .post-content a:visited {
-    color: #424242; }
+    color: #1c1c1c; }
   .post-content a:hover {
-    color: #FE9850;
+    color: #fe9850;
     text-decoration: none; }
 
 blockquote {
   padding: 0 1em;
   margin: 14px 0;
-  border: 2px dashed #d0dfda;
+  border: 2px dashed #ffffff;
   border-radius: 5px;
-  color: #828282;
+  color: #1c1c1c;
   font-size: 18px;
-  background: #d0dfda; }
+  background: #ffffff; }
   blockquote:hover {
-    color: #FE9850; }
+    color: #fe9850; }
   blockquote > :last-child {
     margin-bottom: 0; }
 
 pre, code {
   font-size: 15px;
   border-radius: 3px;
-  background-color: #29281e;
-  color: #eeeeee; }
+  background-color: #1e1e1e;
+  color: #ffffff; }
 
 code {
   padding: 1px 5px; }
@@ -136,7 +136,7 @@ pre {
   height: 16px;
   vertical-align: middle; }
   .icon > svg path {
-    fill: #828282; }
+    fill: #1c1c1c; }
 
 table {
   padding: 0;
@@ -145,22 +145,22 @@ table {
   font-size: 14px; }
 
 table tr {
-  border-top: 1px solid #d6d6d6;
+  border-top: 1px solid #828282;
   background-color: white;
   margin: 0;
   padding: 0; }
 
 table tr:nth-child(2n) {
-  background-color: #f8f8f8; }
+  background-color: #ffffff; }
 
 table tr th {
   font-weight: bold;
-  border: 1px solid #d6d6d6;
+  border: 1px solid #828282;
   margin: 0;
   padding: 3px 6px; }
 
 table tr td {
-  border: 1px solid #d6d6d6;
+  border: 1px solid #828282;
   margin: 0;
   padding: 3px 6px; }
 
@@ -200,7 +200,7 @@ table tr th :last-child, table tr td :last-child {
   letter-spacing: -1px;
   margin-bottom: 0;
   text-align: center;
-  color: #828282; }
+  color: #1c1c1c; }
 
 .site-nav {
   line-height: 56px;
@@ -213,14 +213,15 @@ table tr th :last-child, table tr td :last-child {
     margin-left: 10px;
     margin-right: 10px; }
   .site-nav a {
-    text-decoration: none; }
+    text-decoration: none;
+    color: #fe9850; }
     .site-nav a:hover {
-      color: #FE9850;
+      color: #fe9850;
       text-decoration: none; }
   @media screen and (max-width: 600px) {
     .site-nav {
       position: relative;
-      background-color: #f9f9f9;
+      background-color: #ffffff;
       border: 1px solid #e8e8e8;
       border-radius: 5px;
       text-align: center; }
@@ -232,7 +233,7 @@ table tr th :last-child, table tr td :last-child {
           width: 18px;
           height: 30px; }
           .site-nav .menu-icon > svg path {
-            fill: #424242; }
+            fill: #1c1c1c; }
       .site-nav .trigger {
         clear: both;
         display: none; }
@@ -256,7 +257,7 @@ table tr th :last-child, table tr td :last-child {
   .sidebar-module h4 {
     font-size: 16px;
     font-weight: bold;
-    color: #424242; }
+    color: #1c1c1c; }
   .sidebar-module li {
     list-style: none; }
 
@@ -299,10 +300,16 @@ table tr th :last-child, table tr td :last-child {
   height: 200px;
   margin-left: 125px; }
 
-.post-image {
+.post-cover {
   height: 100%;
   width: 100%;
   object-fit: cover; }
+
+img[src$='#post-image'] {
+  border: 1px solid #828282; }
+
+.section-nav {
+  margin-left: 25px; }
 
 .page-content {
   padding: 15px; }
@@ -314,7 +321,7 @@ table tr th :last-child, table tr td :last-child {
 
 .post-meta {
   font-size: 14px;
-  color: #828282; }
+  color: #1c1c1c; }
 
 .post-link {
   display: block;
@@ -330,63 +337,40 @@ table tr th :last-child, table tr td :last-child {
   font-size: 25px;
   letter-spacing: -1px;
   line-height: 1; }
-  @media screen and (max-width: 800px) {
-    .post-title {
-      font-size: 36px; } }
-
-#markdown-toc {
-  float: right;
-  width: 50%;
-  background: #d0dfda;
-  padding: 20px 15px; }
-  #markdown-toc li {
-    padding-top: 10px;
-    position: relative;
-    list-style-type: none; }
-
-#markdown-toc:before {
-  content: "Table of Contents";
-  font-weight: 700;
-  padding-left: 10px;
-  border-bottom: 5px solid #e8e8e8 !important;
-  display: block;
-  font-size: 18px; }
 
 .post-content p {
   padding: 3px 0; }
 .post-content h1 {
-  font-size: 38px;
-  line-height: 1em; }
-  @media screen and (max-width: 800px) {
-    .post-content h1 {
-      font-size: 36px; } }
+  font-size: 22px;
+  font-style: normal;
+  margin-top: 25px;
+  line-height: 1em;
+  color: #fe9850; }
 .post-content h2 {
-  font-size: 32px;
-  line-height: 1em; }
-  @media screen and (max-width: 800px) {
-    .post-content h2 {
-      font-size: 28px; } }
-.post-content h3 {
-  font-size: 26px;
-  line-height: 1em; }
-  @media screen and (max-width: 800px) {
-    .post-content h3 {
-      font-size: 22px; } }
-.post-content h4 {
   font-size: 20px;
-  line-height: 1em; }
-  @media screen and (max-width: 800px) {
-    .post-content h4 {
-      font-size: 18px; } }
+  font-style: italic;
+  margin-top: 15px;
+  line-height: 1em;
+  color: #fe9850; }
+.post-content h3 {
+  font-size: 18px;
+  font-style: normal;
+  line-height: 1em;
+  color: #828282; }
+.post-content h4 {
+  font-size: 16px;
+  font-style: normal;
+  line-height: 1em;
+  color: #828282; }
 
 q:before {
   content: '『';
-  color: #FE9850;
+  color: #fe9850;
   font-weight: bold; }
 
 q:after {
   content: '』';
-  color: #FE9850;
+  color: #fe9850;
   font-weight: bold; }
 
 .pager {
