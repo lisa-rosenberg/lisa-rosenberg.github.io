@@ -13,13 +13,15 @@ Setting up your own blog is a very easy task to do, especially nowadays.
 With the help of Jekyll, Ruby, GitHub Pages and TravisCI it really is just a matter of some couple of minutes.
 Plus it's totally free!
 In this article I will show you step by step how I did set up my own personal blog.
-Everything should be pretty straightforward and clear.
+Beside my own blog you can find some example GitHub Pages sites [here](https://github.com/jekyll/jekyll/wiki/sites) to get a feeling on how your own blog could look.
+
+Everything in this guide should be pretty straightforward and clear.
 Nevertheless, please let me know if you run into problems of any kind.
 
 # Tool Setup
 ## Git and GitHub
 If you want to host your blog via GitHub as a GitHub Page or on a custom domain, you will need to have an account on GitHub and Git installed on your working machine.
-Join GitHub by following [this link](https://github.com/).
+Join GitHub by following [this link](https://github.com/) and get detailed information on GitHub Pages [here](https://pages.github.com/) or [here](https://jekyllrb.com/docs/github-pages/).
 The latest version of Git is available [here](https://git-scm.com/downloads).
 
 To check whether Git is properly installed, run the following command:
@@ -36,9 +38,11 @@ Personally I like to use one single tool which support everything I need to work
 To make use of a fully automated build process on GitHub Pages for more advanced and individual requirements you will need TravisCI.
 TravisCI is an online application that is capable of automatically building software.
 Please refer to the [official documentation](https://docs.travis-ci.com/user/for-beginners/) for more general information about TravisCI and build processes.
-On [this](https://docs.travis-ci.com/user/tutorial) site you will find the necessary steps to link TravisCI to your GitHub account.
-Please follow the instructions to the second point.
+For a very basic blog without any customization you maybe won't need to use TravisCI.
 
+On [this](https://docs.travis-ci.com/user/tutorial) site you will find the necessary steps to link TravisCI to your GitHub account.
+Please follow the instructions up to the second point.
+We will come back to it later.
 
 ## Source Code Editor or IDE
 You may want to work with a source code editor or IDE with syntax highlighting and other helpful features.
@@ -48,7 +52,7 @@ Although it's not a necessity, features like these will make it easier to work o
 
 ## Ruby
 In order to get your blog running locally, you'll need to install the programming language Ruby with Devkit included.
-I downloaded the latest version for Windows from [here](https://rubyinstaller.org/downloads/).
+You can download the latest version for Windows from [here](https://rubyinstaller.org/downloads/).
 
 After the basic installation of Ruby you will be prompted to install the optional Devkit.
 You will need the Devkit in order to install Jekyll successfully.
@@ -66,10 +70,14 @@ ridk version
 
 If you are using an IDE that offers Ruby language integration you may want to add the Ruby SDK.
 It's purely optional but will add some language related features like code completion, which always is a nice thing to have.
-You will only notive this feature in your Gemfile, though.
+You will only notice this feature in your Gemfile, though.
 
 ## Jekyll
 Jekyll is a Ruby gem and comes along with a set of commands to easily build a static Jekyll website.
+You can find a lot of information on Jekyll on its [main page](https://jekyllrb.com/) and [online documentation](https://jekyllrb.com/docs/).
+Please read through them to get to know Jekyll better.
+You will work with it a lot from now on!
+
 To install Jekyll, just run
 
 ```text
@@ -113,6 +121,7 @@ Luckily it's possible to create other branches on user repositories for these pu
 We will see how to even automate the whole process of releasing a new article to a productive environment.
 
 Clone the repository you just have created via HTTPS or SSH.
+If you don't know how to do this, please read through the [Git documentation](https://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository).
 
 ## Creating a minimal Jekyll site
 Now that we have all tools needed and a GitHub user repository to work with it's time to create your blog.
@@ -153,8 +162,13 @@ Configuration file: C:/path/to/repository.github.io/_config.yml
 ```
 
 With this you now can access your freshly built Jekyll site with some example content by the given server address.
-Now is a good time to commit and push your progress on GitHub.
-GitHub will automatically build your Jekyll site which can be accessed online by using your GitHub GitHub Pages URL `https://<username>.github.io/`.
+It even detects changes you make to the files and will rebuild your site automatically.
+The only exception is the `.config.yml`.
+If you make changes to this file you will have to stop the process by pressing `Ctrl+C` and rebuild it manually.
+
+Now is a good time to commit and push your progress to your remote GitHub repository.
+GitHub will automatically build your Jekyll site.
+Your blog can be accessed online by using your GitHub GitHub Pages URL `https://<username>.github.io/`.
 Locally and remotely your blog should now look like this:
 
 ![Minimal Jekyll site](/assets/images/posts/2018/10-setup-jekyll-first-page.png#post-image)
@@ -171,6 +185,7 @@ Your repository should currently look like this:
 ├── _posts
 |   └── 2018-10-29-welcome-to-jekyll.markdown
 ├── _site
+├── .gitignore
 ├── .sass-cache
 ├── 404.html
 ├── about.md
@@ -180,16 +195,17 @@ Your repository should currently look like this:
 ```
 
 But for what are the files and directories used?
-* **_config.yml**: Configuration data will be stored here
-* **_posts**: This is the directory where blog posts should be stored
-* **YYYY-MM-DD-title-of-post.markdown**: Naming convention for any blog post markdown file
-* **_site**: The built Jekyll site. Here is everything that is actually displayed in your browser
-* **.sass-cache**: Stylesheet cache
-* **404.html**: A basic error page
-* **about.md**: Information about you
-* **Gemfile**: Information about Ruby gems you want to use for your Jekyll site
-* **Gemfile.lock**: Snapshot of the current Ruby gems and their versions in use
-* **index.md**: Static content on your main page and layout information
+* `_config.yml`: Configuration data will be stored here
+* `_posts`: This is the directory where blog posts should be stored
+* `YYYY-MM-DD-title-of-post.markdown`: Naming convention for any blog post Markdown file
+* `_site`: The built Jekyll site. Here is everything that is actually displayed in your browser
+* `.gitignore`: Files and directories referenced here will not be committed to your repository
+* `.sass-cache`: Stylesheet cache
+* `404.html`: A basic error page
+* `about.md`: Information about you
+* `Gemfile`: Information about Ruby gems you want to use for your Jekyll site
+* `Gemfile.lock`: Snapshot of the current Ruby gems and their versions in use
+* `index.md`: Static content on your main page and layout information
 
 Please refer to the [official documentation](https://jekyllrb.com/docs/structure/) of Jekyll for further information on this topic.
 
@@ -198,13 +214,13 @@ The most basic information about your blog is stored there.
 Go ahead and try to make your first changes there.
 After you are done, try to rebuild the Jekyll site to see the changes.
 
-To add a new blog post just add a markdown file in the `_posts` directory according to the existing example markdown file.
-Please refer to [this](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf) site for more information about how to style your text with markdown files.
+To add a new blog post just add a Markdown file in the `_posts` directory according to the existing example Markdown file.
+Please refer to [this](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf) site for more information about how to style your text with Markdown.
 Besides of the content of your article you probably have noticed some kind of head part in the file.
 In this head part there are pieces of important meta information on your blog post written.
 Jekyll uses them for blog post related adjustments - e.g. what page layout to use for or which categories to associate with this particular blog post.
 Basically the meta information section only consists of some variables which are declared and/or used somewhere else in the sourcecode of this repository.
-The meta information section of the example blog post markdown file looks like this:
+The meta information section of the example blog post Markdown file looks like this:
 
 ```yaml
 layout: post
@@ -215,7 +231,10 @@ categories: jekyll update
 
 The `_config.yml` file and `_posts` directory are the two most important things to understand and to use.
 Of course, at some point you probably will modify other files, too.
-In case you aim to get a very basic blog running, you can stop reading here, because to write articles on your blog it's only necessary to add new blog post markdown files and push your changes to GitHub.
+I would suggest you to look through every file to understand the connections between your files.
+
+In case you aim to get a very basic blog running without any custom styling, you can stop reading here.
+To write articles on your blog it's only necessary to add new blog post Markdown files and push your changes to GitHub.
 
 ## Themes
 The basic Jekyll theme is not bad, but maybe a little bit too plain.
@@ -225,25 +244,25 @@ However, not all of them are compatible with GitHub Pages right away and therefo
 [Here](https://pages.github.com/themes/) is a list of all Jekyll themes supported by GitHub Pages by default.
 If you already like one of these without any further customization, see the usage instructions on the respective theme repository page and you are all set.
 
-Most of the Jekyll themes you will find [here](http://jekyllthemes.org/) won't work with GitHub Pages without using TravisCI.
-Same goes to any customization you maybe want to make on your Jekyll site.
+Most of the Jekyll themes you will find [here](http://themes.jekyllrc.org/) won't work with GitHub Pages without using TravisCI.
+Same goes to any customization you maybe want to make on a Jekyll theme.
 
 # Hosting
 ## Using Git branches
-In order to automatically build your Jekyll site with TravisCI, it's necessary to work at least on two Git branches.
+In order to automatically build your Jekyll site with TravisCI, it's necessary to work on at least two Git branches.
 The master branch will only be used to build your blog by GitHub Pages.
-You won't work on that branch actively anymore.
+You won't work on that branch from now on.
 
 A second branch - let's call it "release" - will serve as your new main branch to work on and push your commits to.
 So you have to create a new branch that branches off of the master branch.
 If you don't know how to do that, please refer to [this](https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell#_create_new_branch) site.
-From now on you don't have to push anything on the master branch.
+If you're done you won't have to do anything on the master branch anymore.
 
 ## Build your blog with TravisCI
 Now it's finally time to use TravisCI to build your blog and push the static files of the built site to your master branch automatically.
 To achieve this, firstly you have to follow the instruction steps three to four on [this](https://docs.travis-ci.com/user/tutorial) site you already have visited before.
 
-The `.travis.yml` file should look like this in order to tell TravisCI to pull only from your release branch and push the built site to your master branch.
+The `.travis.yml` file should look like this in order to tell TravisCI to pull only from your release branch and push the static files to your master branch.
 
 ```yaml
 language: ruby
@@ -271,7 +290,55 @@ deploy:
 Surely you have noticed the `$GITHUB_TOKEN` variable in my `.travis.yml` file.
 It's very important for authentication purposes.
 Without it TravisCI is not allowed to pull your repository or push to it.
-Please add a new personal access token to GitHub according the instructions you'll find [here](https://docs.travis-ci.com/user/deployment/pages/) and add it as a variable to TravisCI like described [here](https://docs.travis-ci.com/user/environment-variables#defining-variables-in-repository-settings).
+Please add a new personal access token to GitHub according the instructions you'll find [here](https://docs.travis-ci.com/user/deployment/pages/) and add it as a new variable to TravisCI like described on [this](https://docs.travis-ci.com/user/environment-variables#defining-variables-in-repository-settings) site.
 The variable name you use there has to be identical to the variable name in your `.travis.yml` file.
-    
-# Everything else in jekyll doku
+Anyone with this token has writing access to your repositories - so be sure you don't post it anywhere online in plain text.
+
+Before committing the `.travis.yml` file to your release branch, there is one more thing to do or otherwise the TravisCI build will fail.
+Delete your `Gemfile.lock` file now, commit this change and add this file then to your `.gitignore` file.
+Your `.gitignore` file should look like this:
+
+```text
+## Jekyll ##
+_site
+.sass-cache
+.jekyll-metadata
+
+## Ruby ##
+Gemfile.lock
+```
+
+The `Gemfile.lock` file is a generated file by Bundler.
+Normally you would want it to have in your repository, because it makes the build process faster.
+In a normal case TravisCI is able to deal with this file without any problem.
+However, if you are working on a Windows machine with Ruby for Windows, the generated file seems to contain information TravisCI is unable to read properly and therefore fails during the build process.
+With no `Gemfile.lock` in your repository apparent TravisCI will generate one by itself based on your `Gemfile`.
+
+Now you can follow step five and six on [this](https://docs.travis-ci.com/user/tutorial) site.
+Commit and push your changes to your release branch and watch on your TravisCI [dashboard](https://travis-ci.com/) if TravisCI is building your changes successfully on your master branch.
+Any errors will be written in the job log, so read through it if your build fails.
+If TravisCI was successful, you should be able to visit your newly built blog online!
+
+## Add a custom theme!
+If you successfully built your blog with the help of TravisCI, nothing can hinder you anymore from customizing your blog in any way you want to!
+Firstly it's important to know there are two ways to use a Jekyll theme: as a gem-based theme or a regular file-based theme.
+
+You can add a gem-based theme like a normal gem to your Jekyll site.
+It's therefore probably easier to set up and to maintain.
+There are a lot of gem-based themes available, too.
+However, any further customization is not possible on a gem-based theme without converting it to a regular file-based theme.
+You can find more information on gem-based themes and overriding gem-based themes [here](https://jekyllrb.com/docs/themes/).
+A lot of gem-based themes can be found on [this](https://github.com/planetjekyll/awesome-jekyll-themes) site.
+
+Regular file-based themes can be used via forking or downloading an existing GitHub repository and merge your site content with the downloaded theme files.
+After a long search for a suitable theme I did that, too.
+With this method you get every file you need to customize anything on the theme.
+You will have to modify HTML, CSS and JavaScript for this, though.
+There are various sites you can find Jekyll themes on.
+You can find of them [here](http://themes.jekyllrc.org/).
+
+I would suggest you to browse through the available Jekyll themes on the internet and choose one theme - whether gem-based or file-based - with a layout you like.
+Why focusing only on the layout?
+Well, you can modify any color and font style without any problem, but changing the layout of an existing site is not very easy.
+It will take some time to customize your blog like this, but it's totally worth the time and only requires a minimal amount of knowledge about HTML, CSS and JavaScript.
+Due to the possibility to see every change you make immediately after building your Jekyll site locally, it's quite a lot of fun, too! :)
