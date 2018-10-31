@@ -1,5 +1,5 @@
 # Site Information
-title                   : read write learn
+title                   : read; write; learn;
 tagline                 :
 author                  : Lisa Rosenberg
 email                   : lisa.rosenberg@outlook.de
@@ -17,6 +17,7 @@ locale                  : en_US
 twitter_username        : rosenbeli
 github_username         : lisa-rosenberg
 xing_username           : Lisa_Rosenberg3
+linkedin_username       : lisa-rosenberg-206a93142
 disqus_shortname        :
 favicon                 : "assets/images/page/favicon.ico"
 aboutme                 :
@@ -45,13 +46,15 @@ locales:
 
 # Build Settings
 markdown                : kramdown
-highlighter             : #pygments
 kramdown:
   input                 : GFM
   syntax_highlighter    : rouge
-plugins                 : [jekyll-paginate]
+  parse_block_html      : true
 paginate                : 5
 excerpt_separator       : <!-- more -->
+plugins:
+  - jekyll-paginate
+  - jekyll-toc
 
 # Reading files
 exclude:
