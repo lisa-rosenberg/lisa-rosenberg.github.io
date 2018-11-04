@@ -130,12 +130,12 @@ pre {
   display: table;
   clear: both; }
 
-.icon > svg {
+.fa-icon > svg {
   display: inline-block;
   width: 16px;
   height: 16px;
   vertical-align: middle; }
-  .icon > svg path {
+  .fa-icon > svg path {
     fill: #1c1c1c; }
 
 table {
@@ -169,6 +169,15 @@ table tr th :first-child, table tr td :first-child {
 
 table tr th :last-child, table tr td :last-child {
   margin-bottom: 0; }
+
+.fa-icon::before {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transform: translate(0, 0); }
 
 .page-header-title {
   height: 250px;
@@ -249,8 +258,6 @@ table tr th :last-child, table tr td :last-child {
   margin: 0;
   font-size: 14px;
   text-align: left; }
-  .sidebar-module > p {
-    margin-top: 15px; }
   .sidebar-module h3 {
     text-align: center;
     margin-bottom: 25px; }
@@ -261,19 +268,16 @@ table tr th :last-child, table tr td :last-child {
   .sidebar-module li {
     list-style: none; }
 
-.about img {
+.about-me img {
   height: 128px;
   width: 128px;
   border-radius: 50%;
   display: block;
   margin: 10px auto 15px; }
 
-.img-about {
-  height: 128px;
-  width: 128px;
-  border-radius: 50%;
-  margin: 0 auto;
-  display: block; }
+.contact-me a {
+  font-size: 30px;
+  margin-right: 2.5px; }
 
 .site-footer {
   clear: both;
@@ -376,12 +380,12 @@ q:after {
 #share-bar {
   font-size: 20px; }
 
-#share-bar h4 {
+#share-bar p {
   margin-bottom: 10px;
   font-weight: 500; }
 
 .share-button {
-  margin: 0px 3px 10px 0px;
+  margin: 0 3px 10px 0;
   padding: 5px 10px 5px 10px; }
 
 .share-button:hover {
