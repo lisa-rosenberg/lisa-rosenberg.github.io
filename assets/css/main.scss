@@ -14,6 +14,16 @@ $black:         #1e1e1e;
 $accent:        #fe9850;
 $dark-accent:   darken($accent, 25%);
 
+// Share Button Colors
+$share-twitter:       #55acee;
+$share-facebook:      #3b5998;
+$share-googleplus:    #dd4b39;
+$share-pinterest:     #cb2027;
+$share-reddit:        #ff4500;
+$share-linkedin:      #007bb5;
+$share-email:         $black;
+$share-hover:         $white;
+
 // Text
 $text-font-family:                    'Lato', 'Open Sans', Helvetica, Arial, sans-serif !important;
 $text-font-size:                      16px;

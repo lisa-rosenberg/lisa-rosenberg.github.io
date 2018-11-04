@@ -306,6 +306,91 @@ q:after {
 }
 
 //#############################################################################
+//## Share Bar Settings
+//#############################################################################
+
+// Share bar
+#share-bar {
+  font-size: 20px;
+}
+
+// Title
+#share-bar h4 {
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+// All buttons
+.share-buttons {
+}
+
+// Each button
+.share-button {
+  margin: 0px 3px 10px 0px;
+  padding: 5px 10px 5px 10px;
+}
+.share-button:hover {
+  opacity: 1;
+  color: $share-hover;
+}
+
+// Facebook button
+.fa-facebook-official {
+  color: $share-facebook;
+}
+.fa-facebook-official:hover {
+  background-color: $share-facebook;
+}
+
+// Twitter button
+.fa-twitter {
+  color: $share-twitter;
+}
+.fa-twitter:hover {
+  background-color: $share-twitter;
+}
+
+// Google-Plus button
+.fa-google-plus {
+  color: $share-googleplus;
+}
+.fa-google-plus:hover {
+  background-color: $share-googleplus;
+}
+
+// Pinterest button
+.fa-pinterest-p {
+  color: $share-pinterest;
+}
+.fa-pinterest-p:hover {
+  background-color: $share-pinterest;
+}
+
+// Reddit button
+.fa-reddit-alien {
+  color: $share-reddit;
+}
+.fa-reddit-alien:hover {
+  background-color: $share-reddit;
+}
+
+// LinkedIn button
+.fa-linkedin {
+  color: $share-linkedin;
+}
+.fa-linkedin:hover {
+  background-color: $share-linkedin;
+}
+
+// Email button
+.fa-envelope {
+  color: $share-email;
+}
+.fa-envelope:hover {
+  background-color: $share-email;
+}
+
+//#############################################################################
 //## Pagination Style Settings
 //#############################################################################
 
