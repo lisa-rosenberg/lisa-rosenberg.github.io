@@ -1,0 +1,31 @@
+<div class="sidebar-module contact-me">
+    {% if site.ShowContactInfo == "true" %}
+    <p> You can contact me via: <p/>
+
+    {% if site.email != empty %}
+    <a href="mailto:{{site.email}}"
+       title="mailto: {{site.email}}"><a class="fa-icon fa-envelope-square fa-3x contact-me-button"/></a>
+    {% endif %}
+
+    {% if site.github_username != empty %}
+    <a href="https://github.com/{{site.github_username}}"
+       title="GithubID: {{site.github_username}}"><a class="fa-icon fa-github-square fa-3x contact-me-button"/></a>
+    {% endif %}
+
+    {% if site.twitter_username != empty %}
+    <a href="https://twitter.com/{{site.twitter_username}}"
+       title="TwitterID: {{site.twitter_username}}"><a class="fa-icon fa-twitter-square fa-3x contact-me-button"/></a>
+    {% endif %}
+
+    {% if site.xing_username != empty %}
+    <a href="https://www.xing.com/profile/{{site.xing_username}}"
+       title="XingID: {{site.xing_username}}"><a class="fa-icon fa-xing-square fa-3x contact-me-button"/></a>
+    {% endif %}
+
+    {% if site.linkedin_username != empty %}
+    <a href="https://www.linkedin.com/in/{{site.linkedin_username}}/"
+       title="LinkedInID: {{site.linkedin_username}}"><a class="fa-icon fa-linkedin-square fa-3x contact-me-button"/></a>
+    {% endif %}
+
+    {% endif %}
+</div>

@@ -1,4 +1,19 @@
 //#############################################################################
+//## Font Awesome
+//#############################################################################
+
+.fa-icon::before {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transform: translate(0, 0);
+}
+
+
+//#############################################################################
 //## Site Header Settings
 //#############################################################################
 
@@ -109,19 +124,17 @@
   }
 }
 
+
 //#############################################################################
 //## Sidebar Settings
 //#############################################################################
 
+// Sidebar
 .sidebar-module {
   padding: 10px;
   margin: 0;
   font-size: 14px;
   text-align: left;
-
-  > p {
-    margin-top: 15px;
-  }
 
   h3 {
     text-align: center;
@@ -137,14 +150,10 @@
   li {
     list-style: none;
   }
-
-  span {
-
-  }
 }
 
-// About me photo style
-.about {
+// About me photo
+.about-me {
   img {
     height: 128px;
     width: 128px;
@@ -154,13 +163,14 @@
   }
 }
 
-.img-about {
-  height: 128px;
-  width: 128px;
-  border-radius: 50%;
-  margin: 0 auto;
-  display: block;
+// Contact me
+.contact-me {
+  a {
+    font-size: 30px;
+    margin-right: 2.5px;
+  }
 }
+
 
 //#############################################################################
 //## Site Footer Settings
@@ -175,6 +185,7 @@
   padding: $text-spacing-unit 0;
   font-size: 14px;
 }
+
 
 //#############################################################################
 //## Page Content Settings
@@ -305,6 +316,7 @@ q:after {
   font-weight: bold;
 }
 
+
 //#############################################################################
 //## Share Bar Settings
 //#############################################################################
@@ -315,7 +327,7 @@ q:after {
 }
 
 // Title
-#share-bar h4 {
+#share-bar p {
   margin-bottom: 10px;
   font-weight: 500;
 }
@@ -326,7 +338,7 @@ q:after {
 
 // Each button
 .share-button {
-  margin: 0px 3px 10px 0px;
+  margin: 0 3px 10px 0;
   padding: 5px 10px 5px 10px;
 }
 .share-button:hover {
@@ -389,6 +401,7 @@ q:after {
 .fa-envelope:hover {
   background-color: $share-email;
 }
+
 
 //#############################################################################
 //## Pagination Style Settings
