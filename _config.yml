@@ -8,9 +8,9 @@ description             : >-
   This is my blog about software development related topics.
   I want to write down my experiences and things I have learned - so why not sharing them online?
   There will be posts about a single topic as well as (hopefully) monthly posts containing things I have learned that month.
-keywords                : "Software, Development, Lessons Learned, Jekyll, Blog"
+keywords                : "Software, Development, Lessons, Learned, Jekyll, Blog"
 baseurl                 : "" # the subpath of the site, e.g. /blog
-url                     : "" # the base hostname & protocol for the site, e.g. http://example.com
+url                     : "https://lisa-rosenberg.github.io" # the base hostname & protocol for the site, e.g. http://example.com
 locale                  : en_US
 
 # Author Information
