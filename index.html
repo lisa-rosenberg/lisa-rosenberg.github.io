@@ -7,12 +7,12 @@ layout: default
 
         {% for post in paginator.posts %}
 
-        <article class="post-header post-preview">
-            <div class="post-preview-left">
+        <div class="post-header post-preview">
+            <div class="post-preview-image">
                 <a href='{{post.url}}'><img class='post-cover' src="{{post.cover}}"/></a>
             </div>
 
-            <div class="post-preview-right">
+            <div class="post-preview-text">
                 <h1 itemprop="name" class="post-title">
                     <a itemprop="url" class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title
                         }}</a>
@@ -25,7 +25,7 @@ layout: default
                     {{ post.date | date: "%B %-d, %Y" }}
                 </time>
             </div>
-        </article>
+        </div>
 
         {% endfor %}
 

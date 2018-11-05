@@ -195,21 +195,17 @@
 // Post preview on front page
 .post-preview {
   width: 100%;
-  height: 200px;
-  margin: 0;
-  padding: 0;
 }
 
-.post-preview-left {
-  width: 125px;
-  height: 200px;
-  float: left;
+.post-preview-image {
+  width: 75%;
+  height: 100px;
   margin-right: 15px;
 }
 
-.post-preview-right {
+.post-preview-text {
   height: 200px;
-  margin-left: 125px;
+  margin-top: 10px;
 }
 
 // Post cover image
