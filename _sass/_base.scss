@@ -8,9 +8,8 @@ body {
   font-size: $text-font-size;
   line-height: $text-line-height;
   font-weight: $text-font-weight;
-  color: $text-color;
+  color: $footer-font-color;
   background-image: $page-background-image;
-  //-webkit-text-size-adjust: 100%;
 }
 
 // Reset some basic elements
@@ -21,7 +20,7 @@ body, h1, h2, h3, h4, p, blockquote, pre, hr, dl, dd, ol, ul, figure {
 
 // Set `margin-bottom` to maintain vertical rhythm
 h1, h2, h3, h4, p, blockquote, pre, ul, ol, dl, figure, %vertical-rhythm {
-  margin-bottom: $text-spacing-unit / 2;
+  margin-bottom: $text-letter-spacing / 2;
 }
 
 //#############################################################################
@@ -31,14 +30,14 @@ h1, h2, h3, h4, p, blockquote, pre, ul, ol, dl, figure, %vertical-rhythm {
 // Set main page style
 .container {
   min-height: 100%;
-  max-width: -webkit-calc(#{$page-width} - (#{$text-spacing-unit} * 2));
-  max-width: calc(#{$page-width} - (#{$text-spacing-unit} * 2));
+  max-width: -webkit-calc(#{$page-width} - (#{$text-letter-spacing} * 2));
+  max-width: calc(#{$page-width} - (#{$text-letter-spacing} * 2));
   margin: 0 auto 30px;
-  padding-right: $text-spacing-unit;
-  padding-left: $text-spacing-unit;
+  padding-right: $text-letter-spacing;
+  padding-left: $text-letter-spacing;
   padding-top: 0;
 
-  background-color: $page-color;
+  background-color: $page-content-color;
   box-shadow: 1px 1px 10px $page-shadow-color;
 }
 
@@ -56,7 +55,7 @@ h1, h2, h3, h4, p, blockquote, pre, ul, ol, dl, figure, %vertical-rhythm {
   margin: 0px 15px;
 }
 
-@media screen and (min-width: $on-palm) {
+@media screen and (min-width: $page-width-on-palm) {
   .col-sm-8 {
     float: left;
     width: 67.5%;
@@ -94,7 +93,7 @@ figcaption {
 
 // Lists
 ul, ol {
-  margin-left: $text-spacing-unit;
+  margin-left: $text-letter-spacing;
 }
 
 li {
@@ -138,11 +137,11 @@ a {
 blockquote {
   padding: 0 1em;
   margin: 14px 0;
-  border: 2px dashed $text-quote-border-color;
+  border: 2px dashed $quote-border-color;
   border-radius: 5px;
   color: $line-color;
   font-size: 18px;
-  background: $text-quote-background-color;
+  background: $quote-background-color;
 
   &:hover {
     color: $link-hover-color;
@@ -182,11 +181,11 @@ pre {
 
   @extend %clearfix;
 
-  @include media-query($on-laptop) {
-    max-width: -webkit-calc(#{$content-width} - (#{$text-spacing-unit}));
-    max-width: calc(#{$content-width} - (#{$text-spacing-unit}));
-    padding-right: $text-spacing-unit / 2;
-    padding-left: $text-spacing-unit / 2;
+  @include media-query($page-width-on-laptop) {
+    max-width: -webkit-calc(#{$content-width} - (#{$text-letter-spacing}));
+    max-width: calc(#{$content-width} - (#{$text-letter-spacing}));
+    padding-right: $text-letter-spacing / 2;
+    padding-left: $text-letter-spacing / 2;
   }
 }
 

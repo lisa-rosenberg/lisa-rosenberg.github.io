@@ -59,6 +59,7 @@ You will need the Devkit in order to install Jekyll successfully.
 Please choose the third installation option to run the full installation with MINGW development toolchain.
 
 ![Ruby Devkit installation](/assets/images/posts/2018/10-setup-jekyll-devkit.png#post-image)
+*Ruby Devkit installation dialogue*
 
 To check whether Ruby is properly installed, run the following commands:
 
@@ -113,6 +114,7 @@ In a user repository your GitHub Pages blog will only build from the master bran
 There is no way to change this behaviour in the repository settings:
 
 ![GitHub user repository settings](/assets/images/posts/2018/10-setup-jekyll-github-pages.png#post-image)
+*GitHub user repository settings*
 
 Therefore, GitHub will automatically try to build anything you push on this branch.
 Please keep this in mind.
@@ -171,7 +173,8 @@ GitHub will automatically build your Jekyll site.
 Your blog can be accessed online by using your GitHub GitHub Pages URL `https://<username>.github.io/`.
 Locally and remotely your blog should now look like this:
 
-![Minimal Jekyll site](/assets/images/posts/2018/10-setup-jekyll-first-page.png#post-image)
+![Basic Jekyll site](/assets/images/posts/2018/10-setup-jekyll-first-page.png#post-image)
+*Basic Jekyll site without any altering*
 
 ## Basic structure of a Jekyll site
 Okay, we now have a basic scaffold to work with.

@@ -32,18 +32,20 @@
 }
 
 .site-title {
-  font-size: 35px;
-  line-height: 56px;
-  letter-spacing: -1px;
+  font-size: $header-font-size;
+  color: $header-font-color;
+  line-height: $header-line-height;
+  letter-spacing: $header-letter-spacing;
+  text-align: $header-text-align;
+
   align-self: flex-end;
   margin-bottom: 0;
   padding-left: 30px;
   padding-bottom: 5px;
-  text-align: left;
 
   a {
     &, &:visited, &:hover {
-      color: $link-title-color;
+      color: $header-font-color;
       text-decoration: none;
     }
   }
@@ -85,9 +87,8 @@
     }
   }
 
-  @include media-query($on-palm) {
+  @include media-query($page-width-on-palm) {
     position: relative;
-    background-color: $page-background-color;
     border: 1px solid $line-color-light;
     border-radius: 5px;
     text-align: center;
@@ -97,7 +98,7 @@
       line-height: 0;
       text-align: center;
 
-      > svg {
+      svg {
         width: 18px;
         height: 30px;
 
@@ -181,8 +182,8 @@
   text-align: center;
   background-color: $page-footer-color;
   border-top: 1px solid $line-color-light;
-  margin: $text-spacing-unit 0;
-  padding: $text-spacing-unit 0;
+  margin: $text-letter-spacing 0;
+  padding: $text-letter-spacing 0;
   font-size: 14px;
 }
 
@@ -269,51 +270,66 @@ img[src$='#post-cover'] {
 
 .post-content {
   p {
-    padding: $text-spacing-unit/5 0;
+    padding: $text-letter-spacing/5 0;
   }
 
   h1 {
-    font-size: 22px;
+    font-size: $headline-h1-size;
     font-style: $headline-h1-style;
+    color: $headline-h1-color;
     margin-top: 25px;
     line-height: 1em;
-    color: $headline-h1-color;
   }
 
   h2 {
-    font-size: 20px;
+    font-size: $headline-h2-size;
     font-style: $headline-h2-style;
+    color: $headline-h2-color;
     margin-top: 15px;
     line-height: 1em;
-    color: $headline-h2-color;
   }
 
   h3 {
-    font-size: 18px;
+    font-size: $headline-h3-size;
     font-style: $headline-h3-style;
-    line-height: 1em;
     color: $headline-h3-color;
+    margin-top: 5px;
+    line-height: 1em;
   }
 
   h4 {
-    font-size: 16px;
+    font-size: $headline-h4-size;
     font-style: $headline-h4-style;
-    line-height: 1em;
     color: $headline-h4-color;
+    margin-top: 5px;
+    line-height: 1em;
   }
 }
 
 // Quotation
 q:before {
   content: '『';
-  color: $text-quote-color;
+  color: $quote-color;
   font-weight: bold;
 }
 
 q:after {
   content: '』';
-  color: $text-quote-color;
+  color: $quote-color;
   font-weight: bold;
+}
+
+// Post images and captions
+.post-content {
+  img {
+    border: 1px solid $image-border-color;
+  }
+
+  img + em {
+    color: $caption-font-color;
+    font-size: $caption-font-size;
+    display: table;
+  }
 }
 
 
@@ -322,18 +338,20 @@ q:after {
 //#############################################################################
 
 // Share bar
-#share-bar {
-  font-size: 20px;
-}
-
-// Title
-#share-bar p {
-  margin-bottom: 10px;
-  font-weight: 500;
+.share-bar {
+  h2 {
+    font-size: $headline-h2-size;
+    font-style: $headline-h2-style;
+    color: $headline-h2-color;
+    margin-top: 15px;
+    line-height: 1em;
+  }
 }
 
 // All buttons
 .share-buttons {
+  margin-top: 20px;
+  font-size: 20px;
 }
 
 // Each button
@@ -341,6 +359,7 @@ q:after {
   margin: 0 3px 10px 0;
   padding: 5px 10px 5px 10px;
 }
+
 .share-button:hover {
   opacity: 1;
   color: $share-hover;
@@ -350,6 +369,7 @@ q:after {
 .fa-facebook-official {
   color: $share-facebook;
 }
+
 .fa-facebook-official:hover {
   background-color: $share-facebook;
 }
@@ -358,6 +378,7 @@ q:after {
 .fa-twitter {
   color: $share-twitter;
 }
+
 .fa-twitter:hover {
   background-color: $share-twitter;
 }
@@ -366,6 +387,7 @@ q:after {
 .fa-google-plus {
   color: $share-googleplus;
 }
+
 .fa-google-plus:hover {
   background-color: $share-googleplus;
 }
@@ -374,6 +396,7 @@ q:after {
 .fa-pinterest-p {
   color: $share-pinterest;
 }
+
 .fa-pinterest-p:hover {
   background-color: $share-pinterest;
 }
@@ -382,6 +405,7 @@ q:after {
 .fa-reddit-alien {
   color: $share-reddit;
 }
+
 .fa-reddit-alien:hover {
   background-color: $share-reddit;
 }
@@ -390,6 +414,7 @@ q:after {
 .fa-linkedin {
   color: $share-linkedin;
 }
+
 .fa-linkedin:hover {
   background-color: $share-linkedin;
 }
@@ -398,6 +423,7 @@ q:after {
 .fa-envelope {
   color: $share-email;
 }
+
 .fa-envelope:hover {
   background-color: $share-email;
 }
@@ -407,7 +433,7 @@ q:after {
 //## Pagination Style Settings
 //#############################################################################
 
-.pager {
+.pagination {
   margin-bottom: 60px;
   text-align: center;
 
@@ -434,7 +460,7 @@ q:after {
 }
 
 //#############################################################################
-//## Tags and Categories Style Settings
+//## Tags, Categories and Archives Style Settings
 //#############################################################################
 
 .tags-box {
@@ -451,7 +477,7 @@ q:after {
   }
 }
 
-// time style of tags and categories
+// Time style (Categories, Tags, Archives)
 time {
   margin-left: 15px;
   font-style: italic;
