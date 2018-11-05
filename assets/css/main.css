@@ -192,13 +192,14 @@ table tr th :last-child, table tr td :last-child {
 
 .site-title {
   font-size: 35px;
+  color: #ffffff;
   line-height: 56px;
   letter-spacing: -1px;
+  text-align: left;
   align-self: flex-end;
   margin-bottom: 0;
   padding-left: 30px;
-  padding-bottom: 5px;
-  text-align: left; }
+  padding-bottom: 5px; }
   .site-title a, .site-title a:visited, .site-title a:hover {
     color: #ffffff;
     text-decoration: none; }
@@ -230,7 +231,6 @@ table tr th :last-child, table tr td :last-child {
   @media screen and (max-width: 600px) {
     .site-nav {
       position: relative;
-      background-color: #ffffff;
       border: 1px solid #e8e8e8;
       border-radius: 5px;
       text-align: center; }
@@ -238,10 +238,10 @@ table tr th :last-child, table tr td :last-child {
         display: block;
         line-height: 0;
         text-align: center; }
-        .site-nav .menu-icon > svg {
+        .site-nav .menu-icon svg {
           width: 18px;
           height: 30px; }
-          .site-nav .menu-icon > svg path {
+          .site-nav .menu-icon svg path {
             fill: #1c1c1c; }
       .site-nav .trigger {
         clear: both;
@@ -310,7 +310,7 @@ table tr th :last-child, table tr td :last-child {
   object-fit: cover; }
 
 img[src$='#post-cover'] {
-  border: 1px solid #828282; }
+  border: 1px solid #e8e8e8; }
 
 .section-nav {
   margin-left: 25px; }
@@ -347,25 +347,27 @@ img[src$='#post-cover'] {
 .post-content h1 {
   font-size: 22px;
   font-style: normal;
+  color: #fe9850;
   margin-top: 25px;
-  line-height: 1em;
-  color: #fe9850; }
+  line-height: 1em; }
 .post-content h2 {
   font-size: 20px;
   font-style: italic;
+  color: #fe9850;
   margin-top: 15px;
-  line-height: 1em;
-  color: #fe9850; }
+  line-height: 1em; }
 .post-content h3 {
+  font-size: 20px;
+  font-style: normal;
+  color: #828282;
+  margin-top: 5px;
+  line-height: 1em; }
+.post-content h4 {
   font-size: 18px;
   font-style: normal;
-  line-height: 1em;
-  color: #828282; }
-.post-content h4 {
-  font-size: 16px;
-  font-style: normal;
-  line-height: 1em;
-  color: #828282; }
+  color: #828282;
+  margin-top: 5px;
+  line-height: 1em; }
 
 q:before {
   content: '『';
@@ -377,12 +379,23 @@ q:after {
   color: #fe9850;
   font-weight: bold; }
 
-#share-bar {
-  font-size: 20px; }
+.post-content img {
+  border: 1px solid #e8e8e8; }
+.post-content img + em {
+  color: #1c1c1c;
+  font-size: 12px;
+  display: table; }
 
-#share-bar p {
-  margin-bottom: 10px;
-  font-weight: 500; }
+.share-bar h2 {
+  font-size: 20px;
+  font-style: italic;
+  color: #fe9850;
+  margin-top: 15px;
+  line-height: 1em; }
+
+.share-buttons {
+  margin-top: 20px;
+  font-size: 20px; }
 
 .share-button {
   margin: 0 3px 10px 0;
@@ -434,19 +447,19 @@ q:after {
 .fa-envelope:hover {
   background-color: #1e1e1e; }
 
-.pager {
+.pagination {
   margin-bottom: 60px;
   text-align: center; }
-  .pager ul {
+  .pagination ul {
     display: block;
     margin: 20px 0; }
-  .pager li {
+  .pagination li {
     list-style: none; }
-  .pager li.previous a {
+  .pagination li.previous a {
     float: left; }
-  .pager li.next a {
+  .pagination li.next a {
     float: right; }
-  .pager li.disabled {
+  .pagination li.disabled {
     display: none; }
 
 .tags-box li {
