@@ -47,14 +47,14 @@ It's a rather cheap gadget that offers a lot of possibilities due to its various
 - At the workshop I got the opportunity to initiate an ice-breaker game with the kids and mentors.
 This was the first time in my life doing something like this!
 The kids and mentors were accepting it very well - leaving me very relieved.
-Hopefully we will doing these activities on every workshop from now on.
+Hopefully we will keep doing this kind of activities on every workshop from now on.
 
 ## Study
 - In this semester I attend the course "Computer Graphics".
 The goal is to implement a ray tracer in C++ step by step.
 Both the programming language and the topic are new to me and very exciting.
 
-- Running the following code will result in the output "this.a".
+- Running the following JavaScript code will result in the output "this.a".
 This is because of the fact that "this" in the context of a function is referencing the global object and therefore overwrite the "a" of the first line.
 
 ~~~javascript
