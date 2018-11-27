@@ -99,7 +99,7 @@
     <header class="post-header">
 
         <!--<div class="post-header-image">-->
-            <!--<img class='post-cover' src="/assets/images/posts/2018/10-setup-jekyll-cover.jpg"/>-->
+            <!--<img class='post-cover' src="/assets/images/posts/2018/10-setup-jekyll-cover.png"/>-->
         <!--</div>-->
 
         <h1 itemprop="name" class="post-title">Set up your own blog with Jekyll and GitHub Pages</h1>
@@ -158,6 +158,8 @@
 </li>
 </ul><h1 id="introduction">
 <a id="introduction" class="anchor" href="#introduction" aria-hidden="true"><span class="octicon octicon-link"></span></a>Introduction</h1>
+<p><img src="/assets/images/posts//2018/10-setup-jekyll-cover.png#post-cover" alt="Blogging"></p>
+
 <p>Setting up your own blog is a very easy task to do, especially nowadays.
 With the help of Jekyll, Ruby, GitHub Pages and TravisCI it really is just a matter of some couple of minutes.
 Plus it’s totally free!
@@ -516,7 +518,7 @@ Due to the possibility to see every change you make immediately after building y
 
     <div class="share-bar">
 
-    <h2>Share</h2>
+    <h1>Share</h1>
 
     <div class="share-buttons">
 
@@ -559,7 +561,7 @@ Due to the possibility to see every change you make immediately after building y
         <li class="disabled"><a>&larr; Older</a></li>
         
         
-        <li class="disabled"><a>Newer &rarr;</a></li>
+        <li class="next"><a href="/lessons-learned/2018/11/25/lessons-learned-october.html" title="Lessons Learned: October 2018">Newer &rarr;</a></li>
         
     </ul>
 
@@ -576,6 +578,8 @@ $(function(){
         }
         else if (e.which == 39 || e.which == 75) {  // Right arrow and K
             
+        url = 'https://lisa-rosenberg.github.io/lessons-learned/2018/11/25/lessons-learned-october.html';
+        
         }
         if (url) {
             window.location = url;
@@ -676,6 +680,10 @@ $(function(){
     <ul>
     
         <li>
+            <a href="/lessons-learned/2018/11/25/lessons-learned-october.html" title="Lessons Learned: October 2018" rel="bookmark">Lessons Learned: October 2018</a>
+        </li>
+    
+        <li>
             <a href="/guide/2018/10/31/setup-blog-with-jekyll-and-github-pages.html" title="Set up your own blog with Jekyll and GitHub Pages" rel="bookmark">Set up your own blog with Jekyll and GitHub Pages</a>
         </li>
     
@@ -692,6 +700,10 @@ $(function(){
             <a href="/categories/#Guide" title="Guide" rel="1">Guide (1)</a>
         </li>
     
+        <li>
+            <a href="/categories/#Lessons-Learned" title="Lessons-Learned" rel="1">Lessons-Learned (1)</a>
+        </li>
+    
     </ul>
 
 </div>
@@ -702,11 +714,21 @@ $(function(){
     <ul>
         <li>
     
-    <a href="/tags/#jekyll" title="jekyll" rel="1">jekyll</a> &nbsp;
+    <a href="/tags/#jekyll" title="jekyll" rel="2">jekyll</a> &nbsp;
     
-    <a href="/tags/#github-pages" title="github-pages" rel="1">github-pages</a> &nbsp;
+    <a href="/tags/#github-pages" title="github-pages" rel="2">github-pages</a> &nbsp;
     
     <a href="/tags/#blog" title="blog" rel="1">blog</a> &nbsp;
+    
+    <a href="/tags/#lessons-learned" title="lessons-learned" rel="1">lessons-learned</a> &nbsp;
+    
+    <a href="/tags/#c++" title="c++" rel="1">c++</a> &nbsp;
+    
+    <a href="/tags/#javascript" title="javascript" rel="1">javascript</a> &nbsp;
+    
+    <a href="/tags/#docker" title="docker" rel="1">docker</a> &nbsp;
+    
+    <a href="/tags/#scss" title="scss" rel="1">scss</a> &nbsp;
     
         </li>
     </ul>
@@ -726,6 +748,9 @@ $(function(){
             <a href="/archives/#2018">2018</a>
         </li>
     </ul>
+    
+    
+    
     
     
 
