@@ -4,7 +4,7 @@ title       : "Lessons Learned: October 2018"
 date        : 2018-11-25
 cover       : "/assets/images/posts/lessons-learned-cover.png"
 categories  : Lessons-Learned
-tags        : lessons learned c++ jekyll javascript docker
+tags        : lessons-learned c++ jekyll javascript docker scss github-pages
 toc         : false
 ---
 
