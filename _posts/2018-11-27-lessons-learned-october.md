@@ -1,7 +1,7 @@
 ---
 layout      : post
 title       : "Lessons Learned: October 2018"
-date        : 2018-11-25
+date        : 2018-11-27
 cover       : "/assets/images/posts/lessons-learned-cover.png"
 categories  : Lessons-Learned
 tags        : lessons-learned c++ jekyll javascript docker scss github-pages
@@ -57,7 +57,7 @@ Both the programming language and the topic are new to me and very exciting.
 - Running the following code will result in the output "this.a".
 This is because of the fact that "this" in the context of a function is referencing the global object and therefore overwrite the "a" of the first line.
 
-```javascript {.line-numbers}
+~~~javascript
 var a = "value";
 
 function outerClosure() {
@@ -68,7 +68,7 @@ function outerClosure() {
 
 outerClosure();
 console.log(a);
-```
+~~~
 
 ## Work
 - I got to know Docker and its features a lot better in this month.
