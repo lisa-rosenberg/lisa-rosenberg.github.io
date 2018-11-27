@@ -2,13 +2,15 @@
 layout      : post
 title       : "Set up your own blog with Jekyll and GitHub Pages"
 date        : 2018-10-31
-cover       : "/assets/images/posts/2018/10-setup-jekyll-cover.jpg"
+cover       : "/assets/images/posts/2018/10-setup-jekyll-cover.png"
 categories  : Guide
 tags        : jekyll github-pages blog
 toc         : true
 ---
 
 # Introduction
+![Blogging](/assets/images/posts//2018/10-setup-jekyll-cover.png#post-cover)
+
 Setting up your own blog is a very easy task to do, especially nowadays.
 With the help of Jekyll, Ruby, GitHub Pages and TravisCI it really is just a matter of some couple of minutes.
 Plus it's totally free!
