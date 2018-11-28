@@ -19,7 +19,7 @@ This is what I learned and experienced in October 2018:
 ## Personal blog
 - I learned how to set up a personal blog with the power of Jekyll, Ruby, GitHub, GitHub Pages and Travis CI.
 It's very easy to start with and surprisingly simple to fully automate the hosting process.
-At the same time it's a very manual and lengthy task to apply your very own structuring and styling ideas.
+At the same time it's a very manual and lengthy task to apply your own structuring and styling ideas.
 I wrote a [guide](https://lisa-rosenberg.github.io/guide/2018/10/31/setup-blog-with-jekyll-and-github-pages.html) covering the important steps on how to set up your own blog using Jekyll and GitHub Pages.
 
 - It's possible to host a GitHub Pages website either with a user repository or a project repository.
@@ -28,7 +28,7 @@ The main differences are the URL of the website and the branching structure.
 - I made myself familiar with the directory and file structure of Jekyll and Ruby.
 
 - New to me was the CSS extension language SCSS - it offers a clearer syntax and better variable usage.
-[Here](https://www.rechnerhaus.de/blog/unterschied-zwischen-css-scss-sass) is an example code of CSS and SCSS to make the syntax differences syntax clear.
+[Here](https://www.rechnerhaus.de/blog/unterschied-zwischen-css-scss-sass) is an example code of CSS and SCSS to make the syntax differences clear.
 
 ## Talks
 - In October 19th I held my first notable talk on a big internal event of my employer.
