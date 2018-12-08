@@ -1,7 +1,7 @@
 ---
 layout      : post
 title       : "Lessons Learned: November 2018"
-date        : 2018-12-07
+date        : 2018-12-08
 cover       : "/assets/images/posts/lessons-learned-cover.png"
 categories  : Lessons-Learned
 tags        : lessons-learned vex-robot html css markdown kramdown
