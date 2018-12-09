@@ -1,7 +1,7 @@
 ---
 layout      : post
 title       : "How we can inspire kids and teens for IT with workshops"
-date        : 2018-10-31
+date        : 2018-12-09
 cover       : "/assets/images/posts/2018/10-setup-jekyll-cover.png"
 categories  : Guide
 tags        : it-workshop kids4it kidscraft devoxx4kids kids teens
@@ -30,6 +30,7 @@ There are a lot of different workshop formats with different sizes and goals.
 In this article I will only introduce workshop formats I know about and where volunteer work is possible in case you want to participate as a mentor yourself.
 
 ### Devoxx4Kids
+
 |                     |                                                               |
 | :------------------ | :------------------------------------------------------------ |
 | Website             | http://www.devoxx4kids.org/                                   |
@@ -41,6 +42,7 @@ In this article I will only introduce workshop formats I know about and where vo
 | Number of topics    | More than topics for kids (rotating), 1 day project for teens |
 
 ### Kids4IT
+
 |                     |                                                               |
 | :------------------ | :------------------------------------------------------------ |
 | Website             | https://www.kids4it.de/                                       |
@@ -52,6 +54,7 @@ In this article I will only introduce workshop formats I know about and where vo
 | Number of topics    | 1                                                             |
 
 ### KIDScraft
+
 |                     |                                                               |
 | :------------------ | :------------------------------------------------------------ |
 | Website             | https://www.kidscraft-camp.de/                                |
@@ -63,6 +66,7 @@ In this article I will only introduce workshop formats I know about and where vo
 | Number of topics    | About 8 topics for kids (rotating), about 5 topics for teens  |
 
 ### Jugend Hackt
+
 |                     |                                                               |
 | :------------------ | :------------------------------------------------------------ |
 | Website             | https://jugendhackt.org/                                      |
@@ -74,6 +78,7 @@ In this article I will only introduce workshop formats I know about and where vo
 | Number of topics    | The groups are working on own projects and self-chosen topics |
 
 ### CoderDojo
+
 |                     |                                                               |
 | :------------------ | :------------------------------------------------------------ |
 | Website             | https://coderdojo.com/                                        |
@@ -83,6 +88,8 @@ In this article I will only introduce workshop formats I know about and where vo
 | Target group        | Kids aged 8 to 13, teens aged 14 to 16                        |
 | Number of attendees | About 10                                                      |
 | Number of topics    | The kids and teens are mostly working on self-chosen topics   |
+
+### Other formats
 
 ## Workshop topics
 
