@@ -15,3 +15,9 @@ One can collect knowledge or understanding gained by experiences for personal re
 Articles in this category will contain a short overview about things I have learned or experienced in the past month.
 
 This is what I learned and experienced in December 2018:
+
+## Personal blog
+- PDF to Jekyll
+
+## Talks
+- Prepare and do first Git workshop
