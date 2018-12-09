@@ -31,7 +31,7 @@ In this article I will only introduce workshop formats I know about and where vo
 
 ### Devoxx4Kids
 |                     |                                                               |
-| ------------------- | ------------------------------------------------------------- |
+| :------------------ | :------------------------------------------------------------ |
 | Website             | http://www.devoxx4kids.org/                                   |
 | Days per event      | 1 (only on Saturdays)                                         |
 | Duration per day    | 8 hours                                                       |
@@ -42,7 +42,7 @@ In this article I will only introduce workshop formats I know about and where vo
 
 ### Kids4IT
 |                     |                                                               |
-| ------------------- | ------------------------------------------------------------- |
+| :------------------ | :------------------------------------------------------------ |
 | Website             | https://www.kids4it.de/                                       |
 | Days per event      | 1 (only on Saturdays)                                         |
 | Duration per day    | 4 hours                                                       |
@@ -53,7 +53,7 @@ In this article I will only introduce workshop formats I know about and where vo
 
 ### KIDScraft
 |                     |                                                               |
-| ------------------- | ------------------------------------------------------------- |
+| :------------------ | :------------------------------------------------------------ |
 | Website             | https://www.kidscraft-camp.de/                                |
 | Days per event      | 5 days (Monday to Friday in school's summer holidays)         |
 | Duration per day    | 8 hours                                                       |
@@ -64,7 +64,7 @@ In this article I will only introduce workshop formats I know about and where vo
 
 ### Jugend Hackt
 |                     |                                                               |
-| ------------------- | ------------------------------------------------------------- |
+| :------------------ | :------------------------------------------------------------ |
 | Website             | https://jugendhackt.org/                                      |
 | Days per event      | 2 days (a whole weekend)                                      |
 | Duration per day    | 8 hours                                                       |
@@ -75,7 +75,7 @@ In this article I will only introduce workshop formats I know about and where vo
 
 ### CoderDojo
 |                     |                                                               |
-| ------------------- | ------------------------------------------------------------- |
+| :------------------ | :------------------------------------------------------------ |
 | Website             | https://coderdojo.com/                                        |
 | Days per event      | 1 day                                                         |
 | Duration per day    | About 4 hours                                                 |
