@@ -2,7 +2,7 @@
 layout      : post
 title       : "How we can inspire kids and teens for IT with workshops"
 date        : 2018-12-09
-cover       : "/assets/images/posts/2018/10-setup-jekyll-cover.png"
+cover       : "/assets/images/posts/2018/12-it-workshops-for-kids-cover.jpg"
 categories  : Guide
 tags        : it-workshop kids4it kidscraft devoxx4kids kids teens
 toc         : true
