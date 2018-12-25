@@ -23,23 +23,25 @@ It all started when Oliver Milke asked me on a HackTalk event whether I want to 
 So far I have been on eight IT workshop events for kids and teens as a volunteer plus one info event for girls who are interested in STEM.
 The previous formats were namely Devoxx4Kids, Kids4IT, KIDScraft, MINT for Girls and Girl's Day.
 
-By the start of this December I will participate in the project CyberMentor and accompany one schoolgirl for a whole year!
-
 ## What does a workshop look like?
 There are a lot of different workshop formats with different sizes and goals.
-In this article I will only introduce workshop formats I know about and where volunteer work is possible in case you want to participate as a mentor yourself.
+In this article I will only introduce German workshop formats I know about.
+You can participate at any of these as a mentor yourself.
 
 ### Devoxx4Kids
 
-|                     |                                                               |
-| :------------------ | :------------------------------------------------------------ |
-| Website             | http://www.devoxx4kids.org/                                   |
-| Days per event      | 1 (only on Saturdays)                                         |
-| Duration per day    | 8 hours                                                       |
-| Frequency           | More than 1 event per year                                    |
-| Target group        | Kids aged 8 to 13, teens aged 14 to 16                        |
-| Number of attendees | About 30 kids and 10 teens                                    |
-| Number of topics    | More than topics for kids (rotating), 1 day project for teens |
+Devoxx4Kids findet mehrmals im Jahr an unterschiedlichen Standorten in Deutschland statt und ist ein eintägiger Workshop mit etwa 50 Teilnehmern.
+Kinder im Alter zwischen 8 und 13 sowie Jugendliche im Alter zwischen 14 und 16 können daran teilnehmen und benötigen keine Vorkenntnisse.
+
+Die Themen sind unterschiedlich und den beiden Altersgruppen angepasst.
+Jugendliche lernen beispielsweise das Programmieren einer kleinen Anwendung mit einer Programmiersprache.
+Das Thema und die Programmiersprache für die Anwendung ist dabei frei wählbar und nur von den Kenntnissen des Mentors beschränkt.
+
+Kinder lernen meist mehrere kleinere Themen an unterschiedlichen Stationen in rotierenden Gruppen.
+Das mögliche Angebot an passenden Themen ist sehr groß und daher auch von Workshop zu Workshop sehr unterschiedlich.
+Die Teilnehmer lernen beispielsweise mit Programmiersprachen für Kinder das Programmieren kleiner Spiele oder anhand smarter Roboter das Thema Robotik und Sensorik kennen.
+
+Weitere Infomationen findest du auf der [Homepage](http://www.devoxx4kids.org/) von Devoxx4Kids.
 
 ### Kids4IT
 
@@ -52,6 +54,13 @@ In this article I will only introduce workshop formats I know about and where vo
 | Target group        | Kids aged 8 to 13                                             |
 | Number of attendees | About 12 kids                                                 |
 | Number of topics    | 1                                                             |
+
+Kids4IT fühlt sich wie eine kleinere Version von Devoxx4Kids an.
+Ähnlich wie Devoxx4Kids findet auch Kids4IT mehrmals im Jahr statt, allerdings bisher nur im norddeutschen Raum (Hamburg, Hannover, Braunschweig).
+Kinder im Alter zwischen 8 und 13 sind die Zielgruppe, welche innerhalb von vier Stunden ein Thema im Workshop kennenlernen.
+
+Kids4IT hat die gleiche große Auswahl an passenden Themen. 
+
 
 ### KIDScraft
 
