@@ -47,10 +47,10 @@ Kids aged 8 to 13 are learning one smaller topic within four hours.
 You can find more information on the [homepage of Kids4IT](https://www.kids4it.de/).
 
 ### KIDScraft
+In contrary to Kids4IT one could call KIDScraft the bigger version of Devoxx4Kids.
+KIDScraft is a one week event and takes place in the summer holidays in Wolfsburg.
+Altogether 150 kids and teens are learning different topics of computer science on this camp.
 
-Im Gegensatz zu Kids4IT könnte man KIDScraft als die große Version von Devoxx4Kids bezeichnen.
-Dieser Workshop findet einmal im Jahr in Wolfsburg statt.
-Ingesamt 150 Kinder und Jugendliche lernen innerhalb von fünf Tagen Themen der Informatik näher kennen.
 
 Die Altersgruppen sind dabei in zwei einzelne Camps unterteilt und widmen sich dort unterschiedlichen Projekten.
 Jugendliche beschäftigen sich das ganze Workshop-Event in über mit einem großen Projektthema.
