@@ -45,46 +45,39 @@ Weitere Infomationen findest du auf der [Homepage](http://www.devoxx4kids.org/) 
 
 ### Kids4IT
 
-|                     |                                                               |
-| :------------------ | :------------------------------------------------------------ |
-| Website             | https://www.kids4it.de/                                       |
-| Days per event      | 1 (only on Saturdays)                                         |
-| Duration per day    | 4 hours                                                       |
-| Frequency           | More than 1 event per year                                    |
-| Target group        | Kids aged 8 to 13                                             |
-| Number of attendees | About 12 kids                                                 |
-| Number of topics    | 1                                                             |
-
 Kids4IT fühlt sich wie eine kleinere Version von Devoxx4Kids an.
-Ähnlich wie Devoxx4Kids findet auch Kids4IT mehrmals im Jahr statt, allerdings bisher nur im norddeutschen Raum (Hamburg, Hannover, Braunschweig).
-Kinder im Alter zwischen 8 und 13 sind die Zielgruppe, welche innerhalb von vier Stunden ein Thema im Workshop kennenlernen.
+Ähnlich wie Devoxx4Kids findet auch Kids4IT mehrmals im Jahr statt, allerdings bisher nur im norddeutschen Raum (Hamburg, Hannover und Braunschweig).
+Kinder im Alter zwischen 8 und 13 sind die Zielgruppe, welche innerhalb von vier Stunden ein einzelnes Thema im Rahmen des Workshops kennenlernen.
 
-Kids4IT hat die gleiche große Auswahl an passenden Themen. 
-
+Auf der [Homepage](https://www.kids4it.de/) kannst du mehr zu Kids4IT erfahren.
 
 ### KIDScraft
 
-|                     |                                                               |
-| :------------------ | :------------------------------------------------------------ |
-| Website             | https://www.kidscraft-camp.de/                                |
-| Days per event      | 5 days (Monday to Friday in school's summer holidays)         |
-| Duration per day    | 8 hours                                                       |
-| Frequency           | 1 event per year                                              |
-| Target group        | Kids aged 8 to 13, teens aged 14 to 16                        |
-| Number of attendees | About 150                                                     |
-| Number of topics    | About 8 topics for kids (rotating), about 5 topics for teens  |
+Im Gegensatz zu Kids4IT könnte man KIDScraft als die große Version von Devoxx4Kids bezeichnen.
+Dieser Workshop findet einmal im Jahr in Wolfsburg statt.
+Ingesamt 150 Kinder und Jugendliche lernen innerhalb von fünf Tagen Themen der Informatik näher kennen.
+
+Die Altersgruppen sind dabei in zwei einzelne Camps unterteilt und widmen sich dort unterschiedlichen Projekten.
+Jugendliche beschäftigen sich das ganze Workshop-Event in über mit einem großen Projektthema.
+Die Kinder hingegen lernen an verschiedenen Stationen mehrere Themen kennen und können zum Schluss in einem der kennengelernten Themen ein größeres Projekt erarbeiten.
+
+KIDScraft hat aufgrund der Größe und Dauer eine sehr besondere Atmosphäre.
+Den ganzen Tag über befinden sich die Teilnehmer auf dem Camp und nehmen zusätzlich an Sport- und Freizeitaktivitäten teil.
+Am letzten Tag präsentieren die Kinder und Jugendliche ihre Ergebnisse vor ihren Eltern und auf der großen Bühne.
+
+Weitere Informationen über KIDScraft findet ihr auf der [Homepage](https://www.kidscraft-camp.de/).
 
 ### Jugend Hackt
 
-|                     |                                                               |
-| :------------------ | :------------------------------------------------------------ |
-| Website             | https://jugendhackt.org/                                      |
-| Days per event      | 2 days (a whole weekend)                                      |
-| Duration per day    | 8 hours                                                       |
-| Frequency           | More than 1 event per year                                    |
-| Target group        | Teens aged 12 to 18                                           |
-| Number of attendees | About 120                                                     |
-| Number of topics    | The groups are working on own projects and self-chosen topics |
+Jugend Hackt ist ebenfalls ein besonderes Workshop-Format.
+Das Event findet an unterschiedlichen Orten in Deutschland mehrmals im Jahr an Wochenenden statt.
+Etwa 120 Jugendliche im Alter zwischen 12 und 18 Jahren können in Gruppen ein größeres Projekt mit weltverbesserndem Thema erarbeiten.
+Die selbst gewählten Themen sind dabei sehr vielfältig und nicht nur auf das Programmieren beschränkt.
+
+Die teilnehmenden Mentoren stehen ihnen mit ihrem Wissen bei der Erarbeitung der Projekte zur Seite.
+Für die Erarbeitung und abschließende Präsentation der Projektergebnisse sind die Teams jedoch selbst verantwortlich.
+
+Weitere Informationen zu Jugend Hackt findet ihr auf der [Homepage](https://jugendhackt.org/).
 
 ### CoderDojo
 
@@ -97,6 +90,8 @@ Kids4IT hat die gleiche große Auswahl an passenden Themen.
 | Target group        | Kids aged 8 to 13, teens aged 14 to 16                        |
 | Number of attendees | About 10                                                      |
 | Number of topics    | The kids and teens are mostly working on self-chosen topics   |
+
+Viele Städte besitzen
 
 ### Other formats
 
