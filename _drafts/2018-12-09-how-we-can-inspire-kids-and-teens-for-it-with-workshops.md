@@ -30,12 +30,14 @@ You can participate at any of these as a mentor yourself.
 
 ### Devoxx4Kids
 
-Devoxx4Kids findet mehrmals im Jahr an unterschiedlichen Standorten in Deutschland statt und ist ein eintägiger Workshop mit etwa 50 Teilnehmern.
-Kinder im Alter zwischen 8 und 13 sowie Jugendliche im Alter zwischen 14 und 16 können daran teilnehmen und benötigen keine Vorkenntnisse.
+Devoxx4Kids takes place several times a year in different places in Germany.
+It's a one day workshop with about 50 attendees.
+Kids aged 8 to 13 and teens aged 14 to 16 are allowed to participate in the workshops.
+They don't need any previous knowledge.
 
-Die Themen sind unterschiedlich und den beiden Altersgruppen angepasst.
-Jugendliche lernen beispielsweise das Programmieren einer kleinen Anwendung mit einer Programmiersprache.
-Das Thema und die Programmiersprache für die Anwendung ist dabei frei wählbar und nur von den Kenntnissen des Mentors beschränkt.
+The topics are diverse and different depending on age.
+They include programming of small applications in different programming languages for teens and some smaller topics for kids.
+
 
 Kinder lernen meist mehrere kleinere Themen an unterschiedlichen Stationen in rotierenden Gruppen.
 Das mögliche Angebot an passenden Themen ist sehr groß und daher auch von Workshop zu Workshop sehr unterschiedlich.
@@ -81,19 +83,25 @@ Weitere Informationen zu Jugend Hackt findet ihr auf der [Homepage](https://juge
 
 ### CoderDojo
 
-|                     |                                                               |
-| :------------------ | :------------------------------------------------------------ |
-| Website             | https://coderdojo.com/                                        |
-| Days per event      | 1 day                                                         |
-| Duration per day    | About 4 hours                                                 |
-| Frequency           | About 1 event per month                                       |
-| Target group        | Kids aged 8 to 13, teens aged 14 to 16                        |
-| Number of attendees | About 10                                                      |
-| Number of topics    | The kids and teens are mostly working on self-chosen topics   |
+In mehreren Städten in Deutschland gibt es regelmäßig stattfindende CoderDojo-Workshops.
+Hierbei handelt es sich um eher kleinere Workshops, in denen die Teilnehmer eigenverantwortlich an ihren Projekten arbeiten.
+Die Mentoren stehen ihnen hierbei stets zur Seite und beantworten ihre Fragen und geben Anregungen für neue Ideen.
 
-Viele Städte besitzen
+Das Besondere an dem Format CoderDojo ist die Regelmäßigkeit.
+Beispielsweise monatlich finden etwa vierstündige Treffen statt, bei denen oft dieselben Kinder und Jugendliche teilnehmen und an ihren Projekten laufend weiterarbeiten.
+Beim CoderDojo können Kinder und Jugendliche im Alter zwischen 8 und 16 teilnehmen.
+
+Mehr Infos kann man auf der [Homepage](https://coderdojo.com/) vom CoderDojo finden.
 
 ### Other formats
+Neben den etwas ausführlicher beschriebenen Workshop-Formaten gibt es natürlich noch weitere interessante Formate, bei denen man als Mentor oder Mentee mitmachen kann.
+
+CyberMentor ist beispielsweise ein sehr interessantes Format, bei dem ein (weiblicher) Mentor aus der IT-Branche für ein ganzes Jahr eine sichj für MINT interessierende Schülerin online begleiten kann und ihr im Thema MINT bei Fragen und Anregungen zur Seite steht.
+
+Und das JavaLand4Kids ist eine spezielle Ausgabe vom Devoxx4Kids, das einen Tag vor der JavaLand-Konferenz im Phantasialand stattfindet.
+
+Sicher gibt es noch weitere interessante Workshop-Formate.
+Gerne kannst du mir schreiben, welche du noch innerhalb Deutschlands kennst, bei denen man als ehrenamtlicher Mentor mitmachen kann!
 
 ## Workshop topics
 
