@@ -29,29 +29,22 @@ In this article I will only introduce German workshop formats I know about.
 You can participate at any of these as a mentor yourself.
 
 ### Devoxx4Kids
-
-Devoxx4Kids takes place several times a year in different places in Germany.
-It's a one day workshop with about 50 attendees.
+Devoxx4Kids takes place several times a year in different towns in Germany.
+It's a one day event with about 50 attendees.
 Kids aged 8 to 13 and teens aged 14 to 16 are allowed to participate in the workshops.
 They don't need any previous knowledge.
 
 The topics are diverse and different depending on age.
 They include programming of small applications in different programming languages for teens and some smaller topics for kids.
 
-
-Kinder lernen meist mehrere kleinere Themen an unterschiedlichen Stationen in rotierenden Gruppen.
-Das mögliche Angebot an passenden Themen ist sehr groß und daher auch von Workshop zu Workshop sehr unterschiedlich.
-Die Teilnehmer lernen beispielsweise mit Programmiersprachen für Kinder das Programmieren kleiner Spiele oder anhand smarter Roboter das Thema Robotik und Sensorik kennen.
-
-Weitere Infomationen findest du auf der [Homepage](http://www.devoxx4kids.org/) von Devoxx4Kids.
+You can find more information on the [homepage of Devoxx4Kids](http://www.devoxx4kids.org/).
 
 ### Kids4IT
+Kids4IT is like a smaller version of Devoxx4Kids.
+Just like Devoxx4Kids it occurs several times a year - only with a smaller range of locations (HH, H, BS) and age group (8-13).
+Kids aged 8 to 13 are learning one smaller topic within four hours.
 
-Kids4IT fühlt sich wie eine kleinere Version von Devoxx4Kids an.
-Ähnlich wie Devoxx4Kids findet auch Kids4IT mehrmals im Jahr statt, allerdings bisher nur im norddeutschen Raum (Hamburg, Hannover und Braunschweig).
-Kinder im Alter zwischen 8 und 13 sind die Zielgruppe, welche innerhalb von vier Stunden ein einzelnes Thema im Rahmen des Workshops kennenlernen.
-
-Auf der [Homepage](https://www.kids4it.de/) kannst du mehr zu Kids4IT erfahren.
+You can find more information on the [homepage of Kids4IT](https://www.kids4it.de/).
 
 ### KIDScraft
 
