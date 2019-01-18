@@ -10,7 +10,7 @@
     <meta property="og:title" content="Set up your own blog with Jekyll and GitHub Pages">
     <title>Set up your own blog with Jekyll and GitHub Pages</title>
     <meta property="og:description"
-          content="IntroductionSetting up your own blog is a very easy task to do, especially nowadays.With the help of Jekyll, Ruby, GitHub Pages and TravisCI it really is jus...">
+          content="IntroductionSetting up your own blog is a very easy task to do, especially nowadays.With the help of Jekyll, Ruby, GitHub Pages and Travis CI it really is ju...">
     <meta property="og:url" content="https://lisa-rosenberg.github.io/guide/2018/10/31/setup-blog-with-jekyll-and-github-pages.html">
     <meta property="og:site_name" content="read; write; learn;">
     <meta property="og:locale" content="en_US">
@@ -19,7 +19,7 @@
     <meta name="twitter:creator" content="@rosenbeli">
     <meta name="twitter:title" content="Set up your own blog with Jekyll and GitHub Pages">
     <meta name="twitter:description"
-          content="IntroductionSetting up your own blog is a very easy task to do, especially nowadays.With the help of Jekyll, Ruby, GitHub Pages and TravisCI it really is jus...">
+          content="IntroductionSetting up your own blog is a very easy task to do, especially nowadays.With the help of Jekyll, Ruby, GitHub Pages and Travis CI it really is ju...">
     <meta name="twitter:url" content="https://lisa-rosenberg.github.io/guide/2018/10/31/setup-blog-with-jekyll-and-github-pages.html">
 
     <meta name="keywords" content="Software, Development, Lessons, Learned, Jekyll, Blog">
@@ -115,7 +115,7 @@
 
             </br>
 
-            <meta itemprop="keywords" content="jekyll,github-pages,blog"/>
+            <meta itemprop="keywords" content="jekyll,github-pages,blog,travis-ci,ruby"/>
             
             Tags: 
             
@@ -123,7 +123,11 @@
             
             <a href="/tags/#github-pages" title="github-pages">github-pages</a>, 
             
-            <a href="/tags/#blog" title="blog">blog</a>
+            <a href="/tags/#blog" title="blog">blog</a>, 
+            
+            <a href="/tags/#travis-ci" title="travis-ci">travis-ci</a>, 
+            
+            <a href="/tags/#ruby" title="ruby">ruby</a>
             
             
         </p>
@@ -135,7 +139,7 @@
 <li class="toc-entry toc-h1"><a href="#tool-setup">Tool Setup</a>
 <ul>
 <li class="toc-entry toc-h2"><a href="#git-and-github">Git and GitHub</a></li>
-<li class="toc-entry toc-h2"><a href="#travisci">TravisCI</a></li>
+<li class="toc-entry toc-h2"><a href="#travis-ci">Travis CI</a></li>
 <li class="toc-entry toc-h2"><a href="#source-code-editor-or-ide">Source Code Editor or IDE</a></li>
 <li class="toc-entry toc-h2"><a href="#ruby">Ruby</a></li>
 <li class="toc-entry toc-h2"><a href="#jekyll">Jekyll</a></li>
@@ -152,7 +156,7 @@
 <li class="toc-entry toc-h1"><a href="#hosting">Hosting</a>
 <ul>
 <li class="toc-entry toc-h2"><a href="#using-git-branches">Using Git branches</a></li>
-<li class="toc-entry toc-h2"><a href="#build-your-blog-with-travisci">Build your blog with TravisCI</a></li>
+<li class="toc-entry toc-h2"><a href="#build-your-blog-with-travis-ci">Build your blog with Travis CI</a></li>
 <li class="toc-entry toc-h2"><a href="#add-a-custom-theme">Add a custom theme!</a></li>
 </ul>
 </li>
@@ -161,7 +165,7 @@
 <p><img src="/assets/images/posts//2018/10-setup-jekyll-cover.png#post-cover" alt="Blogging"></p>
 
 <p>Setting up your own blog is a very easy task to do, especially nowadays.
-With the help of Jekyll, Ruby, GitHub Pages and TravisCI it really is just a matter of some couple of minutes.
+With the help of Jekyll, Ruby, GitHub Pages and Travis CI it really is just a matter of some couple of minutes.
 Plus it’s totally free!
 In this article I will show you step by step how I did set up my own personal blog.
 Beside my own blog you can find some example GitHub Pages sites <a href="https://github.com/jekyll/jekyll/wiki/sites">here</a> to get a feeling on how your own blog could look.</p>
@@ -186,14 +190,14 @@ The latest version of Git is available <a href="https://git-scm.com/downloads">h
 This will make it a little bit easier to work on your blog articles, because you won’t need to switch the working tool to commit your changes.
 Personally I like to use one single tool which support everything I need to work properly.</p>
 
-<h2 id="travisci">
-<a id="travisci" class="anchor" href="#travisci" aria-hidden="true"><span class="octicon octicon-link"></span></a>TravisCI</h2>
-<p>To make use of a fully automated build process on GitHub Pages for more advanced and individual requirements you will need TravisCI.
-TravisCI is an online application that is capable of automatically building software.
-Please refer to the <a href="https://docs.travis-ci.com/user/for-beginners/">official documentation</a> for more general information about TravisCI and build processes.
-For a very basic blog without any customization you maybe won’t need to use TravisCI.</p>
+<h2 id="travis-ci">
+<a id="travis-ci" class="anchor" href="#travis-ci" aria-hidden="true"><span class="octicon octicon-link"></span></a>Travis CI</h2>
+<p>To make use of a fully automated build process on GitHub Pages for more advanced and individual requirements you will need Travis CI.
+Travis CI is an online application that is capable of automatically building software.
+Please refer to the <a href="https://docs.travis-ci.com/user/for-beginners/">official documentation</a> for more general information about Travis CI and build processes.
+For a very basic blog without any customization you maybe won’t need to use Travis CI.</p>
 
-<p>On <a href="https://docs.travis-ci.com/user/tutorial">this</a> site you will find the necessary steps to link TravisCI to your GitHub account.
+<p>On <a href="https://docs.travis-ci.com/user/tutorial">this</a> site you will find the necessary steps to link Travis CI to your GitHub account.
 Please follow the instructions up to the second point.
 We will come back to it later.</p>
 
@@ -413,14 +417,14 @@ However, not all of them are compatible with GitHub Pages right away and therefo
 <a href="https://pages.github.com/themes/">Here</a> is a list of all Jekyll themes supported by GitHub Pages by default.
 If you already like one of these without any further customization, see the usage instructions on the respective theme repository page and you are all set.</p>
 
-<p>Most of the Jekyll themes you will find <a href="http://themes.jekyllrc.org/">here</a> won’t work with GitHub Pages without using TravisCI.
+<p>Most of the Jekyll themes you will find <a href="http://themes.jekyllrc.org/">here</a> won’t work with GitHub Pages without using Travis CI.
 Same goes to any customization you maybe want to make on a Jekyll theme.</p>
 
 <h1 id="hosting">
 <a id="hosting" class="anchor" href="#hosting" aria-hidden="true"><span class="octicon octicon-link"></span></a>Hosting</h1>
 <h2 id="using-git-branches">
 <a id="using-git-branches" class="anchor" href="#using-git-branches" aria-hidden="true"><span class="octicon octicon-link"></span></a>Using Git branches</h2>
-<p>In order to automatically build your Jekyll site with TravisCI, it’s necessary to work on at least two Git branches.
+<p>In order to automatically build your Jekyll site with Travis CI, it’s necessary to work on at least two Git branches.
 The master branch will only be used to build your blog by GitHub Pages.
 You won’t work on that branch from now on.</p>
 
@@ -429,12 +433,12 @@ So you have to create a new branch that branches off of the master branch.
 If you don’t know how to do that, please refer to <a href="https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell#_create_new_branch">this</a> site.
 If you’re done you won’t have to do anything on the master branch anymore.</p>
 
-<h2 id="build-your-blog-with-travisci">
-<a id="build-your-blog-with-travisci" class="anchor" href="#build-your-blog-with-travisci" aria-hidden="true"><span class="octicon octicon-link"></span></a>Build your blog with TravisCI</h2>
-<p>Now it’s finally time to use TravisCI to build your blog and push the static files of the built site to your master branch automatically.
+<h2 id="build-your-blog-with-travis-ci">
+<a id="build-your-blog-with-travis-ci" class="anchor" href="#build-your-blog-with-travis-ci" aria-hidden="true"><span class="octicon octicon-link"></span></a>Build your blog with Travis CI</h2>
+<p>Now it’s finally time to use Travis CI to build your blog and push the static files of the built site to your master branch automatically.
 To achieve this, firstly you have to follow the instruction steps three to four on <a href="https://docs.travis-ci.com/user/tutorial">this</a> site you already have visited before.</p>
 
-<p>The <code class="highlighter-rouge">.travis.yml</code> file should look like this in order to tell TravisCI to pull only from your release branch and push the static files to your master branch.</p>
+<p>The <code class="highlighter-rouge">.travis.yml</code> file should look like this in order to tell Travis CI to pull only from your release branch and push the static files to your master branch.</p>
 
 <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">language</span><span class="pi">:</span> <span class="s">ruby</span>
 
@@ -460,12 +464,12 @@ To achieve this, firstly you have to follow the instruction steps three to four 
 
 <p>Surely you have noticed the <code class="highlighter-rouge">$GITHUB_TOKEN</code> variable in my <code class="highlighter-rouge">.travis.yml</code> file.
 It’s very important for authentication purposes.
-Without it TravisCI is not allowed to pull your repository or push to it.
-Please add a new personal access token to GitHub according the instructions you’ll find <a href="https://docs.travis-ci.com/user/deployment/pages/">here</a> and add it as a new variable to TravisCI like described on <a href="https://docs.travis-ci.com/user/environment-variables#defining-variables-in-repository-settings">this</a> site.
+Without it Travis CI is not allowed to pull your repository or push to it.
+Please add a new personal access token to GitHub according the instructions you’ll find <a href="https://docs.travis-ci.com/user/deployment/pages/">here</a> and add it as a new variable to Travis CI like described on <a href="https://docs.travis-ci.com/user/environment-variables#defining-variables-in-repository-settings">this</a> site.
 The variable name you use there has to be identical to the variable name in your <code class="highlighter-rouge">.travis.yml</code> file.
 Anyone with this token has writing access to your repositories - so be sure you don’t post it anywhere online in plain text.</p>
 
-<p>Before committing the <code class="highlighter-rouge">.travis.yml</code> file to your release branch, there is one more thing to do or otherwise the TravisCI build will fail.
+<p>Before committing the <code class="highlighter-rouge">.travis.yml</code> file to your release branch, there is one more thing to do or otherwise the Travis CI build will fail.
 Delete your <code class="highlighter-rouge">Gemfile.lock</code> file now, commit this change and add this file then to your <code class="highlighter-rouge">.gitignore</code> file.
 Your <code class="highlighter-rouge">.gitignore</code> file should look like this:</p>
 
@@ -480,18 +484,18 @@ Gemfile.lock
 
 <p>The <code class="highlighter-rouge">Gemfile.lock</code> file is a generated file by Bundler.
 Normally you would want it to have in your repository, because it makes the build process faster.
-In a normal case TravisCI is able to deal with this file without any problem.
-However, if you are working on a Windows machine with Ruby for Windows, the generated file seems to contain information TravisCI is unable to read properly and therefore fails during the build process.
-With no <code class="highlighter-rouge">Gemfile.lock</code> in your repository apparent TravisCI will generate one by itself based on your <code class="highlighter-rouge">Gemfile</code>.</p>
+In a normal case Travis CI is able to deal with this file without any problem.
+However, if you are working on a Windows machine with Ruby for Windows, the generated file seems to contain information Travis CI is unable to read properly and therefore fails during the build process.
+With no <code class="highlighter-rouge">Gemfile.lock</code> in your repository apparent Travis CI will generate one by itself based on your <code class="highlighter-rouge">Gemfile</code>.</p>
 
 <p>Now you can follow step five and six on <a href="https://docs.travis-ci.com/user/tutorial">this</a> site.
-Commit and push your changes to your release branch and watch on your TravisCI <a href="https://travis-ci.com/">dashboard</a> if TravisCI is building your changes successfully on your master branch.
+Commit and push your changes to your release branch and watch on your Travis CI <a href="https://travis-ci.com/">dashboard</a> if Travis CI is building your changes successfully on your master branch.
 Any errors will be written in the job log, so read through it if your build fails.
-If TravisCI was successful, you should be able to visit your newly built blog online!</p>
+If Travis CI was successful, you should be able to visit your newly built blog online!</p>
 
 <h2 id="add-a-custom-theme">
 <a id="add-a-custom-theme" class="anchor" href="#add-a-custom-theme" aria-hidden="true"><span class="octicon octicon-link"></span></a>Add a custom theme!</h2>
-<p>If you successfully built your blog with the help of TravisCI, nothing can hinder you anymore from customizing your blog in any way you want to!
+<p>If you successfully built your blog with the help of Travis CI, nothing can hinder you anymore from customizing your blog in any way you want to!
 Firstly it’s important to know there are two ways to use a Jekyll theme: as a gem-based theme or a regular file-based theme.</p>
 
 <p>You can add a gem-based theme like a normal gem to your Jekyll site.
@@ -680,6 +684,10 @@ $(function(){
     <ul>
     
         <li>
+            <a href="/lessons-learned/2019/01/17/lessons-learned-december.html" title="Lessons Learned: December 2018" rel="bookmark">Lessons Learned: December 2018</a>
+        </li>
+    
+        <li>
             <a href="/lessons-learned/2018/12/08/lessons-learned-november.html" title="Lessons Learned: November 2018" rel="bookmark">Lessons Learned: November 2018</a>
         </li>
     
@@ -705,7 +713,7 @@ $(function(){
         </li>
     
         <li>
-            <a href="/categories/#Lessons-Learned" title="Lessons-Learned" rel="2">Lessons-Learned (2)</a>
+            <a href="/categories/#Lessons-Learned" title="Lessons-Learned" rel="3">Lessons-Learned (3)</a>
         </li>
     
     </ul>
@@ -724,7 +732,11 @@ $(function(){
     
     <a href="/tags/#blog" title="blog" rel="1">blog</a> &nbsp;
     
-    <a href="/tags/#lessons-learned" title="lessons-learned" rel="2">lessons-learned</a> &nbsp;
+    <a href="/tags/#travis-ci" title="travis-ci" rel="1">travis-ci</a> &nbsp;
+    
+    <a href="/tags/#ruby" title="ruby" rel="1">ruby</a> &nbsp;
+    
+    <a href="/tags/#lessons-learned" title="lessons-learned" rel="3">lessons-learned</a> &nbsp;
     
     <a href="/tags/#c++" title="c++" rel="1">c++</a> &nbsp;
     
@@ -744,6 +756,12 @@ $(function(){
     
     <a href="/tags/#kramdown" title="kramdown" rel="1">kramdown</a> &nbsp;
     
+    <a href="/tags/#git" title="git" rel="1">git</a> &nbsp;
+    
+    <a href="/tags/#workshop" title="workshop" rel="1">workshop</a> &nbsp;
+    
+    <a href="/tags/#35c3" title="35c3" rel="1">35c3</a> &nbsp;
+    
         </li>
     </ul>
 
@@ -752,6 +770,17 @@ $(function(){
     <div class="sidebar-module">
     <h4>Archives</h4>
 
+    
+    
+    
+    
+    
+    <ul>
+        <li id="2019">
+            <a href="/archives/#2019">2019</a>
+        </li>
+    </ul>
+    
     
     
     
