@@ -20,13 +20,13 @@ This is what I learned and experienced in December 2018:
 - In this month I prepared and hold my first workshop about Git (together with [Dmitrij Drandarov](https://twitter.com/drandarov_io)).
 It dealt with a mix of its basics, best practices and common problems to preferably meet the expectations of every attendee.
 The best part of it was the lively conversation with the highly interested audience about the topic!
-I really learned a lot from every aspect of the workshop and I am very happy for the trust my company put in Dmitrij and me doing something like this on our own.
+I really learned a lot from every aspect of the workshop and I am very happy for the trust the company I work at put in Dmitrij and me doing something like this on our own.
 One of my future articles will definitely be about this topic.
 
 - With this I also added a new topic ("Git - basics, best practices and common problems") to the list of my possible talks. :)
 
 ## Events
-- With the support of my company I attended a driving safety training at the [Hammerstein Park](https://www.hammerstein-park.de/branchenbuch/verkehrswacht-gifhorn-e-v.html) to learn how to react and drive in special situations best.
+- Through an opportunity at the company I work at, I attended a driving safety training at [Hammerstein Park](https://www.hammerstein-park.de/branchenbuch/verkehrswacht-gifhorn-e-v.html) to learn how to react and drive in special situations best.
 There were a lot of practical exercises and useful tips which will definitely help me in some dangerous situations from now on.
 I highly recommend this training! 🚗
 
