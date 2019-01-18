@@ -23,7 +23,7 @@ The best part of it was the lively conversation with the highly interested audie
 I really learned a lot from every aspect of the workshop and I am very happy for the trust my company put in Dmitrij and me doing something like this on our own.
 One of my future articles will definitely be about this topic.
 
-- With this I also added a new topic ("Git - Basics, Best Practices and Common Problems") to the list of my possible talks. :)
+- With this I also added a new topic ("Git - basics, best practices and common problems") to the list of my possible talks. :)
 
 ## Events
 - With the support of my company I attended a driving safety training at the [Hammerstein Park](https://www.hammerstein-park.de/branchenbuch/verkehrswacht-gifhorn-e-v.html) to learn how to react and drive in special situations best.

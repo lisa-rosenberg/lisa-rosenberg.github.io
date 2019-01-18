@@ -4,7 +4,7 @@ title       : "Set up your own blog with Jekyll and GitHub Pages"
 date        : 2018-10-31
 cover       : "/assets/images/posts/2018/10-setup-jekyll-cover.png"
 categories  : Guide
-tags        : jekyll github-pages blog
+tags        : jekyll github-pages blog travis-ci ruby
 toc         : true
 ---
 
@@ -12,7 +12,7 @@ toc         : true
 ![Blogging](/assets/images/posts//2018/10-setup-jekyll-cover.png#post-cover)
 
 Setting up your own blog is a very easy task to do, especially nowadays.
-With the help of Jekyll, Ruby, GitHub Pages and TravisCI it really is just a matter of some couple of minutes.
+With the help of Jekyll, Ruby, GitHub Pages and Travis CI it really is just a matter of some couple of minutes.
 Plus it's totally free!
 In this article I will show you step by step how I did set up my own personal blog.
 Beside my own blog you can find some example GitHub Pages sites [here](https://github.com/jekyll/jekyll/wiki/sites) to get a feeling on how your own blog could look.
@@ -36,13 +36,13 @@ Some source code editors and IDE tools offer a Git integration.
 This will make it a little bit easier to work on your blog articles, because you won't need to switch the working tool to commit your changes.
 Personally I like to use one single tool which support everything I need to work properly.
 
-## TravisCI
-To make use of a fully automated build process on GitHub Pages for more advanced and individual requirements you will need TravisCI.
-TravisCI is an online application that is capable of automatically building software.
-Please refer to the [official documentation](https://docs.travis-ci.com/user/for-beginners/) for more general information about TravisCI and build processes.
-For a very basic blog without any customization you maybe won't need to use TravisCI.
+## Travis CI
+To make use of a fully automated build process on GitHub Pages for more advanced and individual requirements you will need Travis CI.
+Travis CI is an online application that is capable of automatically building software.
+Please refer to the [official documentation](https://docs.travis-ci.com/user/for-beginners/) for more general information about Travis CI and build processes.
+For a very basic blog without any customization you maybe won't need to use Travis CI.
 
-On [this](https://docs.travis-ci.com/user/tutorial) site you will find the necessary steps to link TravisCI to your GitHub account.
+On [this](https://docs.travis-ci.com/user/tutorial) site you will find the necessary steps to link Travis CI to your GitHub account.
 Please follow the instructions up to the second point.
 We will come back to it later.
 
@@ -249,12 +249,12 @@ However, not all of them are compatible with GitHub Pages right away and therefo
 [Here](https://pages.github.com/themes/) is a list of all Jekyll themes supported by GitHub Pages by default.
 If you already like one of these without any further customization, see the usage instructions on the respective theme repository page and you are all set.
 
-Most of the Jekyll themes you will find [here](http://themes.jekyllrc.org/) won't work with GitHub Pages without using TravisCI.
+Most of the Jekyll themes you will find [here](http://themes.jekyllrc.org/) won't work with GitHub Pages without using Travis CI.
 Same goes to any customization you maybe want to make on a Jekyll theme.
 
 # Hosting
 ## Using Git branches
-In order to automatically build your Jekyll site with TravisCI, it's necessary to work on at least two Git branches.
+In order to automatically build your Jekyll site with Travis CI, it's necessary to work on at least two Git branches.
 The master branch will only be used to build your blog by GitHub Pages.
 You won't work on that branch from now on.
 
@@ -263,11 +263,11 @@ So you have to create a new branch that branches off of the master branch.
 If you don't know how to do that, please refer to [this](https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell#_create_new_branch) site.
 If you're done you won't have to do anything on the master branch anymore.
 
-## Build your blog with TravisCI
-Now it's finally time to use TravisCI to build your blog and push the static files of the built site to your master branch automatically.
+## Build your blog with Travis CI
+Now it's finally time to use Travis CI to build your blog and push the static files of the built site to your master branch automatically.
 To achieve this, firstly you have to follow the instruction steps three to four on [this](https://docs.travis-ci.com/user/tutorial) site you already have visited before.
 
-The `.travis.yml` file should look like this in order to tell TravisCI to pull only from your release branch and push the static files to your master branch.
+The `.travis.yml` file should look like this in order to tell Travis CI to pull only from your release branch and push the static files to your master branch.
 
 ```yaml
 language: ruby
@@ -294,12 +294,12 @@ deploy:
 
 Surely you have noticed the `$GITHUB_TOKEN` variable in my `.travis.yml` file.
 It's very important for authentication purposes.
-Without it TravisCI is not allowed to pull your repository or push to it.
-Please add a new personal access token to GitHub according the instructions you'll find [here](https://docs.travis-ci.com/user/deployment/pages/) and add it as a new variable to TravisCI like described on [this](https://docs.travis-ci.com/user/environment-variables#defining-variables-in-repository-settings) site.
+Without it Travis CI is not allowed to pull your repository or push to it.
+Please add a new personal access token to GitHub according the instructions you'll find [here](https://docs.travis-ci.com/user/deployment/pages/) and add it as a new variable to Travis CI like described on [this](https://docs.travis-ci.com/user/environment-variables#defining-variables-in-repository-settings) site.
 The variable name you use there has to be identical to the variable name in your `.travis.yml` file.
 Anyone with this token has writing access to your repositories - so be sure you don't post it anywhere online in plain text.
 
-Before committing the `.travis.yml` file to your release branch, there is one more thing to do or otherwise the TravisCI build will fail.
+Before committing the `.travis.yml` file to your release branch, there is one more thing to do or otherwise the Travis CI build will fail.
 Delete your `Gemfile.lock` file now, commit this change and add this file then to your `.gitignore` file.
 Your `.gitignore` file should look like this:
 
@@ -315,17 +315,17 @@ Gemfile.lock
 
 The `Gemfile.lock` file is a generated file by Bundler.
 Normally you would want it to have in your repository, because it makes the build process faster.
-In a normal case TravisCI is able to deal with this file without any problem.
-However, if you are working on a Windows machine with Ruby for Windows, the generated file seems to contain information TravisCI is unable to read properly and therefore fails during the build process.
-With no `Gemfile.lock` in your repository apparent TravisCI will generate one by itself based on your `Gemfile`.
+In a normal case Travis CI is able to deal with this file without any problem.
+However, if you are working on a Windows machine with Ruby for Windows, the generated file seems to contain information Travis CI is unable to read properly and therefore fails during the build process.
+With no `Gemfile.lock` in your repository apparent Travis CI will generate one by itself based on your `Gemfile`.
 
 Now you can follow step five and six on [this](https://docs.travis-ci.com/user/tutorial) site.
-Commit and push your changes to your release branch and watch on your TravisCI [dashboard](https://travis-ci.com/) if TravisCI is building your changes successfully on your master branch.
+Commit and push your changes to your release branch and watch on your Travis CI [dashboard](https://travis-ci.com/) if Travis CI is building your changes successfully on your master branch.
 Any errors will be written in the job log, so read through it if your build fails.
-If TravisCI was successful, you should be able to visit your newly built blog online!
+If Travis CI was successful, you should be able to visit your newly built blog online!
 
 ## Add a custom theme!
-If you successfully built your blog with the help of TravisCI, nothing can hinder you anymore from customizing your blog in any way you want to!
+If you successfully built your blog with the help of Travis CI, nothing can hinder you anymore from customizing your blog in any way you want to!
 Firstly it's important to know there are two ways to use a Jekyll theme: as a gem-based theme or a regular file-based theme.
 
 You can add a gem-based theme like a normal gem to your Jekyll site.
