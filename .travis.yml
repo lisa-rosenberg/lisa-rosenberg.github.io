@@ -4,7 +4,7 @@ cache: bundler
 
 branches:
   only:
-  - release
+  - develop
 
 script:
 - JEKYLL_ENV=production bundle exec jekyll build --destination site
@@ -17,4 +17,4 @@ deploy:
   skip-cleanup: true
   keep-history: true
   on:
-    branch: release
+    branch: develop
