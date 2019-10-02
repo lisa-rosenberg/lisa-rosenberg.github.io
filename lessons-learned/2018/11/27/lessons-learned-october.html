@@ -209,10 +209,10 @@ This is because of the fact that “this” in the context of a function is refe
   </li>
 </ul>
 
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">a</span> <span class="o">=</span> <span class="s2">"value"</span><span class="p">;</span>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">a</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">value</span><span class="dl">"</span><span class="p">;</span>
 
 <span class="kd">function</span> <span class="nx">outerClosure</span><span class="p">()</span> <span class="p">{</span>
-    <span class="nx">a</span> <span class="o">=</span> <span class="s2">"awesome"</span><span class="p">;</span>
+    <span class="nx">a</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">awesome</span><span class="dl">"</span><span class="p">;</span>
     <span class="k">this</span><span class="p">.</span><span class="nx">a</span> <span class="o">=</span> <span class="kd">function</span> <span class="nx">a</span><span class="p">()</span> <span class="p">{</span>
     <span class="p">}</span>
 <span class="p">}</span>
