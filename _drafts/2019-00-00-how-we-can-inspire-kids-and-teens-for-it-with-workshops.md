@@ -10,10 +10,10 @@ toc         : true
 
 # Introduction
 One of the best things you can do in your job career is to share your experiences and knowledge with other people.
-Whether you introduce a new colleague to his future tasks, being a mentor or trainer, writing articles and giving talks about work related topics or leading a whole workshop for your colleagues - there are numerous possibilities to both educate and fascinate other people with your work.
+Whether you introduce a new colleague to his future tasks, being a mentor or trainer, writing articles or giving talks about work related topics or leading a whole workshop for your colleagues - there are numerous possibilities to both educate and fascinate other people with your work.
 
 A very special way to do this is by inspiring kids and teens to follow in your footsteps.
-This is what I recently do a lot in my free time by attending workshops for kids and teens as a mentor.
+This is what I recently do a lot in my free time by attending and organizing workshops for kids and teens as a mentor.
 
 In this article I want to write about my own experiences and why you absolutely should do the same thing :)!
 
