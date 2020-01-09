@@ -31,11 +31,12 @@ default_locale          : "en"
 
 locales:
   en:
-    Home                : "Home"
+    Posts                : "Posts"
     Categories          : "Categories"
     Recent_Posts        : "Recent Posts"
     Tags                : "Tags"
     Archives            : "Archives"
+    Legal Disclosure    : "Legal Disclosure"
 
     Previous            : "Older"
     Next                : "Newer"
